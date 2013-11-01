@@ -1,12 +1,14 @@
-# Modelo de Tese em capítulos UFLA 2013/1
+# Modelo de Tese UFLA 2013/1
 
-Este arquivo é a descrição de como foram organizados os arquivos e os diretórios além de guias gerais para aproveitar a estrutura dos arquivos fornecidos.
+*Walmes Zeviani* (`walmes@ufpr.br`) - 01/11/2013
+
+Este arquivo é a descrição de como foram organizados os arquivos e os diretórios além de guias gerais para aproveitar a estrutura e conteúdo dos arquivos fornecidos.
 
 ## Partição do código fonte
 
 Uma das vantagens da edição de documentos em LaTex é fazer a partição do código fonte. Com iss é possível editar partes de um grande documento, como uma Tese, mantendo as partes separadas em arquivos. 
 
-Para ter um maior controle do projeto eu separei todo o conteúdo em diretórios. Cada capítulo tem um diretório. As figuras, tabelas e scripts R tambem tem seus diretórios. Abaixo está a organização do diretório.
+Para ter um maior controle do projeto eu separei todo o conteúdo em diretórios. Cada capítulo tem um diretório. As figuras, tabelas e scripts R também tem seus diretórios. Abaixo está a organização do diretório.
 
 ```
 .
@@ -78,7 +80,7 @@ Para ter um maior controle do projeto eu separei todo o conteúdo em diretórios
 
 ```
 
-Uma vez que tem-se o código fonte dividido e os elementos que o compõem estão distribuídos em vários diretórios, deve se dar atenção nas chamadas dos arquivos nos `\input{}`, `\includegraphics{}` e `\bibliography{}`. No linux isso é facilmente controlado por meio da espeficicação relacional de diretórios usando `../` e `./`.
+Uma vez que tem-se o código fonte dividido e os elementos que o compõem estão distribuídos em vários diretórios, deve se dar atenção nas chamadas dos arquivos nos `\input{}`, `\includegraphics{}` e `\bibliography{}`. No Linux isso é facilmente controlado por meio da espeficicação relacional de diretórios usando `../` e `./`.
 
 ## Descrição de cada arquivo
 
@@ -89,7 +91,7 @@ Uma vez que tem-se o código fonte dividido e os elementos que o compõem estão
 * `scripts`: diretório com scripts R fornecidos como anexo.
 
 #### Nomes de arquivos
-* `cap?`: prefixo `cap` seguido de número, que indica o capítulo, é o arquivo com o corpo do capítulo. Com sulfixos indica-se que elementos textuais se referem.
+* `cap?`: prefixo `cap` seguido de número, que indica o capítulo, é o arquivo com o corpo do capítulo. Com sufixos indica-se que elementos textuais se referem.
     * `resumo`: resumo do capitulo;
     * `abstract`: abstract do capítulo;
 * `WalmesTese`: arquivo mestre que gera o pdf da Tese;
@@ -102,16 +104,16 @@ Uma vez que tem-se o código fonte dividido e os elementos que o compõem estão
 #### Extensões de arquivos
 * `*.tex`: arquivos nativos do latex;
 * `*.aux`: auxiliar ao sistema de citação bibliográfica;
-* `*.bbl`: resultado do processo de citação, contém entradas `\bibitem`. No caso de alguma referência não estar de acordo com as normas de citação exigidas, pode-se arterar a forma como ela é escrita e salvar em outro arquivo que no caso é está identificado por `-corrigido.bbl`;
+* `*.bbl`: resultado do processo de citação, contém entradas `\bibitem`. No caso de alguma referência não estar de acordo com as normas de citação exigidas, pode-se alterar a forma como ela é escrita e salvar em outro arquivo que no caso está identificado por `-corrigido.bbl`;
 * `*.blg`: é o log do sistema de referências bibliográficas;
 * `*.log`: log da compilação, que inclui mensagens de erro no caso de falha;
 * `*.bib`: é o arquivo com cadastro das referências bibliográficas. No meu caso esse arquivo é gerado automaticamente pelo Mendeley (gerenciador de referências bibliográficas), sendo assim sua organização/estrutura é definida pelo Mendeley. Esse arquivo também pode ser criado manualmente;
 * `*.out`: auxiliar dos bookmarks (suponho);
 * `*.toc`: auxiliar do sumário.
 
-A codificação de caracteres desses arquivos é uft-8. Usuários do Windows provavelmente terão que converter para o iso-8859-1 que a codificação predominante nesse sistema.
+A codificação de caracteres desses arquivos é utf-8. Usuários do Windows provavelmente terão que converter para o iso-8859-1 que a codificação predominante nesse sistema.
 
-## Recursos de edição
+## Aplicativos
 
-A edição desses arquivos foi feita princilpalmente com o editor [Kile](http://kile.sourceforge.net/) para arquivos [LaTex](http://www.latex-project.org/). Para análises estatísticas foi considerado o [aplicativo R computação estatística](http://cran.r-project.org/). Para trabalhar com arquivos [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) (não incluídos) foi usado [Emacs](http://vgoulet.act.ulaval.ca/en/emacs/)+[ESS](http://ess.r-project.org/). O sistema operacional foi o [Ubuntu 12.04](http://releases.ubuntu.com/precise/).
+A edição desses arquivos foi feita principalmente com o editor [Kile](http://kile.sourceforge.net/) para arquivos [LaTex](http://www.latex-project.org/). Para análises estatísticas foi considerado o [aplicativo R computação estatística](http://cran.r-project.org/). Para trabalhar com arquivos [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) (não incluídos) foi usado [Emacs](http://vgoulet.act.ulaval.ca/en/emacs/)+[ESS](http://ess.r-project.org/). Para extrair e gerenciar referências bibliográficas foi usado o [Mendeley](http://www.mendeley.com/) com navegador [Firefox](http://www.mozilla.org/pt-BR/firefox/new/). O estilo de referências bibliográficas foi disponível no pacote latex [abntcite](http://code.google.com/p/abntex2/). O sistema operacional foi o [Ubuntu 12.04](http://releases.ubuntu.com/precise/).
 
