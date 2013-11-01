@@ -1,0 +1,52 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.53 }
+
+\bibitem[Bas e Boyaci 2007]{Bas2007}
+\abntrefinfo{Bas e Boyaci}{BAS; BOYACI}{2007}
+{BAS, D.; BOYACI, I.~H. {Modeling and optimization I: Usability of response
+  surface methodology}.
+\textbf{Journal of Food Engineering}, v.~78, n.~3, p. 836--845, fev. 2007.}
+
+\bibitem[Bender 1996]{Bender1996}
+\abntrefinfo{Bender}{BENDER}{1996}
+{BENDER, R. {Calculating confidence intervals for summary measures of
+  individual curves via nonlinear regression models}.
+\textbf{International Journal of Bio-Medical Computing}, v.~41, n.~1, p.
+  13--18, mar. 1996.}
+
+\bibitem[Denison et al. 2002]{Denison2002}
+\abntrefinfo{Denison et al.}{DENISON et al.}{2002}
+{DENISON, D. G.~T. et al. \textbf{{Bayesian Methods for Nonlinear
+  Classification and Regression}}. 1. ed. [S.l.]: Wiley, 2002. 296~p.}
+
+\bibitem[Michaelis e Menten 1913]{Michaelis1913}
+\abntrefinfo{Michaelis e Menten}{MICHAELIS; MENTEN}{1913}
+{MICHAELIS, L.; MENTEN, M. {Die kinetik der invertinwirkung}.
+\textbf{Biochemische zeiturg}, v.~49, p. 333--369, fev. 1913.}
+
+\bibitem[Pinheiro e Bates 2000]{Pinheiro2009}
+\abntrefinfo{Pinheiro e Bates}{PINHEIRO; BATES}{2000}
+{PINHEIRO, J.; BATES, D. \textbf{{Mixed-effects models in S and S-plus}}. 1.
+  ed. New York: Springer, 2000. 548~p.}
+
+\bibitem[Schabenberger e Pierce 2002]{Schabenberger2002}
+\abntrefinfo{Schabenberger e Pierce}{SCHABENBERGER; PIERCE}{2002}
+{SCHABENBERGER, O.; PIERCE, F.~J. \textbf{{Contemporary statistical models for
+  the plant and soil Sciences}}. 1. ed. Boca Raton: CRC Press, 2002. 738~p.}
+
+\bibitem[Seber e Wild 2003]{Seber2003}
+\abntrefinfo{Seber e Wild}{SEBER; WILD}{2003}
+{SEBER, G. A.~F.; WILD, C.~J. \textbf{{Nonlinear Regression}}. Hoboken: Wiley,
+  2003. 752~p.}
+
+\bibitem[Zeviani et al. 2012]{Zeviani2012}
+\abntrefinfo{Zeviani et al.}{ZEVIANI et al.}{2012}
+{ZEVIANI, W.~M. et al. {Modelos n\~{a}o lineares para a libera\c{c}\~{a}o de
+  pot\'{a}ssio de estercos animais em latossolos}.
+\textbf{Ci\^{e}ncia Rural}, v.~42, n.~10, p. 1789--1796, out. 2012.}
+
+\end{thebibliography}

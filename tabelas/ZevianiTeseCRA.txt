@@ -1,0 +1,301 @@
+PS	PF	rep	tens	umid
+Entre linha	0-20	1	0.01	0.57
+Entre linha	0-20	2	0.01	0.59
+Entre linha	0-20	3	0.01	0.59
+Entre linha	0-20	1	1	0.57
+Entre linha	0-20	2	1	0.59
+Entre linha	0-20	3	1	0.59
+Entre linha	0-20	1	2	0.56
+Entre linha	0-20	2	2	0.56
+Entre linha	0-20	3	2	0.57
+Entre linha	0-20	1	4	0.52
+Entre linha	0-20	2	4	0.49
+Entre linha	0-20	3	4	0.5
+Entre linha	0-20	1	6	0.49
+Entre linha	0-20	2	6	0.44
+Entre linha	0-20	3	6	0.46
+Entre linha	0-20	1	10	0.45
+Entre linha	0-20	2	10	0.41
+Entre linha	0-20	3	10	0.42
+Entre linha	0-20	1	33	0.4
+Entre linha	0-20	2	33	0.36
+Entre linha	0-20	3	33	0.37
+Entre linha	0-20	1	100	0.36
+Entre linha	0-20	2	100	0.33
+Entre linha	0-20	3	100	0.35
+Entre linha	0-20	1	500	0.35
+Entre linha	0-20	2	500	0.3
+Entre linha	0-20	3	500	0.35
+Entre linha	0-20	1	1500	0.34
+Entre linha	0-20	2	1500	0.29
+Entre linha	0-20	3	1500	0.34
+Entre linha	20-40	1	0.01	0.63
+Entre linha	20-40	2	0.01	0.61
+Entre linha	20-40	3	0.01	0.61
+Entre linha	20-40	1	1	0.63
+Entre linha	20-40	2	1	0.59
+Entre linha	20-40	3	1	0.6
+Entre linha	20-40	1	2	0.56
+Entre linha	20-40	2	2	0.55
+Entre linha	20-40	3	2	0.56
+Entre linha	20-40	1	4	0.47
+Entre linha	20-40	2	4	0.43
+Entre linha	20-40	3	4	0.46
+Entre linha	20-40	1	6	0.43
+Entre linha	20-40	2	6	0.39
+Entre linha	20-40	3	6	0.4
+Entre linha	20-40	1	10	0.4
+Entre linha	20-40	2	10	0.36
+Entre linha	20-40	3	10	0.37
+Entre linha	20-40	1	33	0.35
+Entre linha	20-40	2	33	0.32
+Entre linha	20-40	3	33	0.31
+Entre linha	20-40	1	100	0.32
+Entre linha	20-40	2	100	0.29
+Entre linha	20-40	3	100	0.3
+Entre linha	20-40	1	500	0.31
+Entre linha	20-40	2	500	0.28
+Entre linha	20-40	3	500	0.29
+Entre linha	20-40	1	1500	0.31
+Entre linha	20-40	2	1500	0.27
+Entre linha	20-40	3	1500	0.28
+Entre linha	40-80	1	0.01	0.57
+Entre linha	40-80	2	0.01	0.6
+Entre linha	40-80	3	0.01	0.58
+Entre linha	40-80	1	1	0.57
+Entre linha	40-80	2	1	0.6
+Entre linha	40-80	3	1	0.58
+Entre linha	40-80	1	2	0.55
+Entre linha	40-80	2	2	0.53
+Entre linha	40-80	3	2	0.52
+Entre linha	40-80	1	4	0.47
+Entre linha	40-80	2	4	0.42
+Entre linha	40-80	3	4	0.42
+Entre linha	40-80	1	6	0.42
+Entre linha	40-80	2	6	0.37
+Entre linha	40-80	3	6	0.38
+Entre linha	40-80	1	10	0.39
+Entre linha	40-80	2	10	0.33
+Entre linha	40-80	3	10	0.35
+Entre linha	40-80	1	33	0.35
+Entre linha	40-80	2	33	0.3
+Entre linha	40-80	3	33	0.31
+Entre linha	40-80	1	100	0.32
+Entre linha	40-80	2	100	0.27
+Entre linha	40-80	3	100	0.29
+Entre linha	40-80	1	500	0.3
+Entre linha	40-80	2	500	0.26
+Entre linha	40-80	3	500	0.27
+Entre linha	40-80	1	1500	0.3
+Entre linha	40-80	2	1500	0.26
+Entre linha	40-80	3	1500	0.27
+Entre linha	80-120	1	0.01	0.6
+Entre linha	80-120	2	0.01	0.61
+Entre linha	80-120	3	0.01	0.59
+Entre linha	80-120	1	1	0.59
+Entre linha	80-120	2	1	0.58
+Entre linha	80-120	3	1	0.58
+Entre linha	80-120	1	2	0.52
+Entre linha	80-120	2	2	0.52
+Entre linha	80-120	3	2	0.51
+Entre linha	80-120	1	4	0.43
+Entre linha	80-120	2	4	0.42
+Entre linha	80-120	3	4	0.42
+Entre linha	80-120	1	6	0.39
+Entre linha	80-120	2	6	0.39
+Entre linha	80-120	3	6	0.38
+Entre linha	80-120	1	10	0.36
+Entre linha	80-120	2	10	0.35
+Entre linha	80-120	3	10	0.35
+Entre linha	80-120	1	33	0.31
+Entre linha	80-120	2	33	0.31
+Entre linha	80-120	3	33	0.31
+Entre linha	80-120	1	100	0.3
+Entre linha	80-120	2	100	0.29
+Entre linha	80-120	3	100	0.3
+Entre linha	80-120	1	500	0.28
+Entre linha	80-120	2	500	0.28
+Entre linha	80-120	3	500	0.28
+Entre linha	80-120	1	1500	0.28
+Entre linha	80-120	2	1500	0.27
+Entre linha	80-120	3	1500	0.28
+Entre linha	120-160	1	0.01	0.62
+Entre linha	120-160	2	0.01	0.62
+Entre linha	120-160	3	0.01	0.55
+Entre linha	120-160	1	1	0.57
+Entre linha	120-160	2	1	0.61
+Entre linha	120-160	3	1	0.54
+Entre linha	120-160	1	2	0.5
+Entre linha	120-160	2	2	0.56
+Entre linha	120-160	3	2	0.51
+Entre linha	120-160	1	4	0.44
+Entre linha	120-160	2	4	0.47
+Entre linha	120-160	3	4	0.47
+Entre linha	120-160	1	6	0.41
+Entre linha	120-160	2	6	0.43
+Entre linha	120-160	3	6	0.44
+Entre linha	120-160	1	10	0.38
+Entre linha	120-160	2	10	0.4
+Entre linha	120-160	3	10	0.42
+Entre linha	120-160	1	33	0.33
+Entre linha	120-160	2	33	0.34
+Entre linha	120-160	3	33	0.36
+Entre linha	120-160	1	100	0.31
+Entre linha	120-160	2	100	0.32
+Entre linha	120-160	3	100	0.35
+Entre linha	120-160	1	500	0.28
+Entre linha	120-160	2	500	0.31
+Entre linha	120-160	3	500	0.34
+Entre linha	120-160	1	1500	0.27
+Entre linha	120-160	2	1500	0.31
+Entre linha	120-160	3	1500	0.33
+Linha	0-20	1	0.01	0.64
+Linha	0-20	2	0.01	0.63
+Linha	0-20	3	0.01	0.66
+Linha	0-20	1	1	0.61
+Linha	0-20	2	1	0.61
+Linha	0-20	3	1	0.65
+Linha	0-20	1	2	0.57
+Linha	0-20	2	2	0.54
+Linha	0-20	3	2	0.57
+Linha	0-20	1	4	0.44
+Linha	0-20	2	4	0.42
+Linha	0-20	3	4	0.44
+Linha	0-20	1	6	0.39
+Linha	0-20	2	6	0.38
+Linha	0-20	3	6	0.39
+Linha	0-20	1	10	0.36
+Linha	0-20	2	10	0.35
+Linha	0-20	3	10	0.35
+Linha	0-20	1	33	0.31
+Linha	0-20	2	33	0.3
+Linha	0-20	3	33	0.3
+Linha	0-20	1	100	0.28
+Linha	0-20	2	100	0.28
+Linha	0-20	3	100	0.28
+Linha	0-20	1	500	0.26
+Linha	0-20	2	500	0.26
+Linha	0-20	3	500	0.26
+Linha	0-20	1	1500	0.25
+Linha	0-20	2	1500	0.25
+Linha	0-20	3	1500	0.27
+Linha	20-40	1	0.01	0.67
+Linha	20-40	2	0.01	0.64
+Linha	20-40	3	0.01	0.64
+Linha	20-40	1	1	0.66
+Linha	20-40	2	1	0.6
+Linha	20-40	3	1	0.6
+Linha	20-40	1	2	0.57
+Linha	20-40	2	2	0.54
+Linha	20-40	3	2	0.55
+Linha	20-40	1	4	0.44
+Linha	20-40	2	4	0.4
+Linha	20-40	3	4	0.41
+Linha	20-40	1	6	0.39
+Linha	20-40	2	6	0.36
+Linha	20-40	3	6	0.37
+Linha	20-40	1	10	0.35
+Linha	20-40	2	10	0.33
+Linha	20-40	3	10	0.33
+Linha	20-40	1	33	0.3
+Linha	20-40	2	33	0.3
+Linha	20-40	3	33	0.3
+Linha	20-40	1	100	0.26
+Linha	20-40	2	100	0.27
+Linha	20-40	3	100	0.27
+Linha	20-40	1	500	0.26
+Linha	20-40	2	500	0.24
+Linha	20-40	3	500	0.24
+Linha	20-40	1	1500	0.26
+Linha	20-40	2	1500	0.24
+Linha	20-40	3	1500	0.23
+Linha	40-80	1	0.01	0.62
+Linha	40-80	2	0.01	0.56
+Linha	40-80	3	0.01	0.61
+Linha	40-80	1	1	0.61
+Linha	40-80	2	1	0.56
+Linha	40-80	3	1	0.6
+Linha	40-80	1	2	0.51
+Linha	40-80	2	2	0.48
+Linha	40-80	3	2	0.51
+Linha	40-80	1	4	0.39
+Linha	40-80	2	4	0.37
+Linha	40-80	3	4	0.38
+Linha	40-80	1	6	0.35
+Linha	40-80	2	6	0.33
+Linha	40-80	3	6	0.34
+Linha	40-80	1	10	0.31
+Linha	40-80	2	10	0.3
+Linha	40-80	3	10	0.3
+Linha	40-80	1	33	0.27
+Linha	40-80	2	33	0.27
+Linha	40-80	3	33	0.28
+Linha	40-80	1	100	0.26
+Linha	40-80	2	100	0.25
+Linha	40-80	3	100	0.25
+Linha	40-80	1	500	0.24
+Linha	40-80	2	500	0.24
+Linha	40-80	3	500	0.24
+Linha	40-80	1	1500	0.24
+Linha	40-80	2	1500	0.23
+Linha	40-80	3	1500	0.24
+Linha	80-120	1	0.01	0.64
+Linha	80-120	2	0.01	0.61
+Linha	80-120	3	0.01	0.6
+Linha	80-120	1	1	0.6
+Linha	80-120	2	1	0.56
+Linha	80-120	3	1	0.62
+Linha	80-120	1	2	0.51
+Linha	80-120	2	2	0.49
+Linha	80-120	3	2	0.54
+Linha	80-120	1	4	0.4
+Linha	80-120	2	4	0.41
+Linha	80-120	3	4	0.43
+Linha	80-120	1	6	0.36
+Linha	80-120	2	6	0.38
+Linha	80-120	3	6	0.38
+Linha	80-120	1	10	0.33
+Linha	80-120	2	10	0.34
+Linha	80-120	3	10	0.34
+Linha	80-120	1	33	0.29
+Linha	80-120	2	33	0.31
+Linha	80-120	3	33	0.31
+Linha	80-120	1	100	0.28
+Linha	80-120	2	100	0.29
+Linha	80-120	3	100	0.28
+Linha	80-120	1	500	0.25
+Linha	80-120	2	500	0.27
+Linha	80-120	3	500	0.27
+Linha	80-120	1	1500	0.25
+Linha	80-120	2	1500	0.27
+Linha	80-120	3	1500	0.26
+Linha	120-160	1	0.01	0.61
+Linha	120-160	2	0.01	0.57
+Linha	120-160	3	0.01	0.57
+Linha	120-160	1	1	0.59
+Linha	120-160	2	1	0.56
+Linha	120-160	3	1	0.54
+Linha	120-160	1	2	0.54
+Linha	120-160	2	2	0.53
+Linha	120-160	3	2	0.49
+Linha	120-160	1	4	0.44
+Linha	120-160	2	4	0.44
+Linha	120-160	3	4	0.41
+Linha	120-160	1	6	0.38
+Linha	120-160	2	6	0.4
+Linha	120-160	3	6	0.38
+Linha	120-160	1	10	0.35
+Linha	120-160	2	10	0.37
+Linha	120-160	3	10	0.36
+Linha	120-160	1	33	0.3
+Linha	120-160	2	33	0.33
+Linha	120-160	3	33	0.33
+Linha	120-160	1	100	0.29
+Linha	120-160	2	100	0.31
+Linha	120-160	3	100	0.31
+Linha	120-160	1	500	0.28
+Linha	120-160	2	500	0.31
+Linha	120-160	3	500	0.29
+Linha	120-160	1	1500	0.28
+Linha	120-160	2	1500	0.3
+Linha	120-160	3	1500	0.28

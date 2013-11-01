@@ -1,0 +1,72 @@
+%==========================================================================================
+
+\documentclass[10pt]{article}
+
+\input{../tese/preambulosimples.tex}
+
+\title{Uma parametrização de um modelo não linear para inferência sobre o nível
+de dano econômico da desfolha no algodoeiro}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{cap3resumo.tex}
+\end{abstract}
+
+\input{cap3.tex}
+
+% Use isso descomentado durante edição.
+% Quando concluir a Tese, comente iss e use
+% o código do bloco abaixo.
+\begin{singlespace}
+\renewcommand\refname{}
+\begin{flushleft}
+\bibliography{bibtese2}
+\end{flushleft}
+\end{singlespace}
+
+%% Em cap3nls-corrigido.bbl foi feita correção manual de
+%% algumas referências como por exemplo as citações
+%% de Dissertação e Tese.
+%% Então deixa-se de usar o arquivo cap3nls.bbl gerado
+%% automaticamente pelo abntcite, mas isso é só ao final.
+% \begin{singlespace}
+% \begin{flushleft}
+% \renewcommand\refname{}
+% \vspace*{-1.5cm}
+% \input{cap3nls-corrigido.bbl}
+% \end{flushleft}
+% \end{singlespace}
+
+\section{Anexos}
+
+\begin{singlespace}
+\noindent{{ANEXO A:$\,\,$} Código R reproduzível correspondente ao
+ajuste do modelo potência reparametrizado para inferência sobre o
+nível de dano econômico da desfolha no algodoeiro.
+Disponível online
+em: \texttt{http://www.leg.ufpr.br/\~{}walmes /TESE/anexoDESF.R}}
+\end{singlespace}
+\noindent \rule[4mm]{\textwidth}{0.1ex}
+\begin{small}
+\linespread{0.7}
+\vspace{-1cm}
+\input{../scripts/anexoDESF.R}
+\noindent \rule[4mm]{\textwidth}{0.1ex}
+\end{small}
+
+\begin{minipage}{\textwidth}
+\noindent{{ANEXO B:$\,\,$} Peso de capulhos produzido (g) ao final do
+ciclo a cada duas plantas de algodão em função do nível de desfolha
+artifical e estágio fenológico.}
+\begin{center}
+ \input{../tabelas/anexotabDESF.txt}
+\end{center}
+\end{minipage}
+
+\end{document}
+
+%==========================================================================================

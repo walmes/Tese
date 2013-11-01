@@ -1,0 +1,103 @@
+%\begin{tabular}{|c|c|c|c|c|}
+%\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|c|c|c|c|c|}
+%\begin{tabular}{|C{0.4cm}|C{4.7cm}|C{3.4cm}|C{3.4cm}|C{4.7cm}|} % ESSA SOMA TEM QUE DAR 16.6
+%\begin{tabular}{C{0.4cm}C{4.7cm}C{3.4cm}C{3.4cm}C{4.7cm}} % ESSA SOMA TEM QUE DAR 16.6
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc}
+\hline 
+id &
+Modelo original & $\vartheta = g(\boldsymbol{\theta})$ & $\theta_i = g^{-1}(\vartheta, \boldsymbol{\theta}_{-i})$ & Modelo reparametrizado\tabularnewline
+\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo plato-linear
+9 &
+$\begin{cases} \theta_0+\theta_1 x &,\, x\leq \theta_b \\  \theta_0+\theta_1 \theta_b &,\, x>\theta_b  \end{cases}$ &
+$\vartheta_b = \theta_0+\theta_1 \theta_b$ &
+$\theta_0 = \vartheta_b-\theta_1 \theta_b$ &
+$\begin{cases} \vartheta_b+\theta_1(x-\theta_b) &,\, x\leq \theta_b \\ \vartheta_b &,\, x>\theta_b \end{cases}$\tabularnewline
+%\hline
+%---------------------------------------------------------------------------------------------------
+% modelo linear segmentado
+10 &
+$\begin{cases} \theta_0+\theta_1 x &,\, x\leq \theta_b \\ \theta_0+\theta_1 \theta_b+\theta_2(x-\theta_b) &,\, x> \theta_b \end{cases}$ &
+$\vartheta_b = \theta_0+\theta_1 \theta_b$ &
+$\theta_0 = \vartheta_b-\theta_1 \theta_b$ &
+$\begin{cases} \vartheta_b+\theta_1(x-\theta_b) &,\, x\leq \theta_b \\ \vartheta_b+\theta_2(x-\theta_b) &,\, x> \theta_b \end{cases} $\tabularnewline
+%\hline
+%---------------------------------------------------------------------------------------------------
+% modelo quadrático
+\multirow{2}{*}{11} &
+\multirow{2}{*}{$\theta_0+\theta_1 x+\theta_2 x^2$} &
+$\displaystyle\vartheta_x = -\frac{\theta_1}{2\theta_2}$ &
+$\theta_1 = 2 \theta_2 \vartheta_x$ &
+\multirow{2}{*}{$\vartheta_y+\theta_2(x-\vartheta_x)^2$}\tabularnewline
+ & 
+ &
+$\vartheta_y = \theta_0+\theta_1\vartheta_x+\theta_2\vartheta_x^2$ &
+$\theta_0 = \vartheta_y - \theta_1\vartheta_x - \theta_2\vartheta_x^2$
+ & \tabularnewline
+%\hline
+%---------------------------------------------------------------------------------------------------
+% modelo quadrático-plato
+\multirow{4}{*}{12} &
+%\multirow{2}{*}{$\begin{cases} \theta_0+\theta_1 x+\theta_2 x^2 &,\, x\leq -\theta_1/(2\theta_2)\\ \theta_0+\theta_1\left(\frac{-\theta_1}{2\theta_2}\right)+%%\theta_2\left(\frac{-\theta_1}{2\theta_2} \right)^2 &,\, x> -\theta_1/(2\theta_2) \end{cases}$} &
+\multirow{4}{*}{$\begin{cases} \theta_0+\theta_1 x+\theta_2 x^2, \\ \qquad x\leq -\theta_1/(2\theta_2)\\ \theta_0+\theta_1\left(\frac{-\theta_1}{2\theta_2}\right)+\theta_2\left(\frac{-\theta_1}{2\theta_2} \right)^2, \\ \qquad  x> -\theta_1/(2\theta_2) \end{cases}$} &
+$\displaystyle\vartheta_x = -\frac{\theta_1}{2\theta_2}$ &
+$\theta_1 = 2 \theta_2 \vartheta_x$ &
+\multirow{4}{*}{$\begin{cases} \vartheta_y+\theta_2(x-\vartheta_x)^2 &,\, x\leq \vartheta_x\\ \vartheta_y &,\, x> \vartheta_x \end{cases}$}\tabularnewline
+ &
+ &
+$\vartheta_y = \theta_0+\theta_1\vartheta_x+\theta_2\vartheta_x^2$ &
+$\theta_0 = \vartheta_y - \theta_1\vartheta_x - \theta_2\vartheta_x^2$
+ & \tabularnewline
+ & & & & \tabularnewline
+ & & & & \tabularnewline
+ & & & & \tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo produção competição (Bleasdale & Nelder, 1960)
+\multirow{2}{*}{13} &
+\multirow{2}{*}{$x(\theta_0+\theta_1 x)^{-1/\theta_2}$} &
+$\displaystyle\vartheta_x = \frac{\theta_0}{\theta_1}\left(\frac{\theta_2}{1-\theta_2}\right)$ &
+$\displaystyle\theta_1 = \frac{\theta_0}{\vartheta_x}\left(\frac{\theta_2}{-1\theta_2}\right)$ &
+\multirow{2}{*}{$\displaystyle\vartheta_y\frac{x}{\vartheta_x}\left(1-\theta_2\left(1-\frac{x}{\vartheta_x}\right)\right)^{-1/\theta_2}$}\tabularnewline
+ & 
+ &
+$\displaystyle\vartheta_y = \vartheta_x\left(\frac{1-\theta_2}{\theta_0}\right)^{1/\theta_2}$ &
+$\displaystyle\theta_0 = (1-\theta_2)\left(\frac{\vartheta_y}{\vartheta_x}\right)^{-\theta_2}$
+ & \tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo de lactação de Wood
+\multirow{3}{*}{14} &
+\multirow{3}{*}{$\theta_0 x^{\theta_1}\exp\{-\theta_2 x\}$} &
+$\displaystyle\vartheta_x = \theta_1/\theta_2$ &
+$\displaystyle\theta_1 = \theta_2\vartheta_x$ &
+\multirow{2}{*}{$\displaystyle \vartheta_y\left(\frac{x}{\vartheta_x}\right)^{\dot{\theta}_1}\exp\{\dot{\theta}_1(1-x/\vartheta_x)\} $}\tabularnewline
+ & 
+ &
+$\displaystyle\vartheta_y = \theta_0(\theta_1/\theta_2)\exp\{-\theta_1\}$ &
+$\displaystyle\theta_0 = \vartheta_y\left(\frac{1}{\vartheta_x}\right)^{\theta_1}\exp\{\theta_1\}$
+ & \tabularnewline
+ &
+ &
+$\displaystyle\vartheta_p = \theta_2^{(\theta_1+1)}$ &
+$\displaystyle\theta_2 = \vartheta_p^{-1/(\theta_1+1)}$ &
+ $\dot{\theta}_1\, : \, \dot{\theta}_1 - \vartheta_x \vartheta_p^{-1/(\dot{\theta}+1)}$ \tabularnewline
+\hline 
+%\end{tabular}
+\end{tabular*}
+
+% inclusões:
+% Richards (tá comentado),
+% Weibull,
+% Langmuir, A*(B*x^C)/(1+B*x^C) Shabenberger exemplo 5.5
+% Morgan-Mercer-Flodin,
+% A*(exp(-B*t)/(1+D*exp(-B*t))^2) Ross2010,
+% Brody,
+% Mitscherlich, A*(1-exp(-k*(x-x0))) ou A+(E-A)*exp(-k*x)
+% Shinozaki e Kira (1956), 1/(A+B*x), Shabenberger exemplo 5.8
+% Holliday (1960), 1/(A+B*x+C*x^2), Shabenberger exemplo 5.8
+% Arndt-Schulz law, Brain & Cousens (1989), D+(A-D+K*x)/(1+C*exp(B*log(x))), homesis em herbicida, Schabenberger figura 5.27
+% Chapman-Richards, A(1-exp(B*x))^C, Schabenberger figura 5.36
+% Von Bertalanffy
+

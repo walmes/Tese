@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: cap1introduc.aux
+The style file: abnt-alf.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: abnt-options.bib
+Database file #2: ../tese/bibtese2.bib
+I was expecting an "="---line 1150 of file ../tese/bibtese2.bib
+ : In 
+ :    multilevel modeling the residual variation in a response variable is split into component parts that are attributed to various levels. In applied work, much use is made of the percentage of variation that is attributable to the higher level sources of variation. Such a measure, however, makes sense only in simple variance components, Normal response, models where it is often referred to as the intra-unit correlation. In this article we describe how similar measures can be found for both more complex random variation in Normal response models and models with discrete responses. In these cases the variance partitions are dependent on predictors associated with the individual observation. We compare several computational techniques to compute the variance partitions.},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1594 of file ../tese/bibtese2.bib
+ : Nonlinear 
+ :           mixed effects models (NLMMs) and self-modeling nonlinear regression (SEMOR) models are often used to fit repeated measures data. They use a common function shared by all subjects to model variation within each subject and some fixed and/or random parameters to model variation between subjects. The parametric NLMM may be too restrictive, and the semiparametric SEMOR model ignores correlations within each subject. In this article we propose a class of semiparametric nonlinear mixed effects models (SNMMs) that extend NLMMs, SEMOR models, and many other existing models in a natural way. A SNMM assumes that the mean function depends on some parameters and nonparametric functions. The parameters provide an interpretable data summary. The nonparametric functions provide flexibility to allow the data to decide some unknown or uncertain components, such as the shape of the mean response over time. A second-stage model with fixed and random effects is used to model the parameters. Smoothing splines are used to model the nonparametric functions. Covariate effects on parameters can be built into the second-stage model, and covariate effects on nonparametric functions can be constructed using smoothing spline ANOVA decompositions. Laplace approximations to the marginal likelihood and penalized marginal likelihood are used to estimate all parameters and nonparametric functions. We propose and compare two estimation procedures, and also show how to construct approximate Bayesian confidence intervals for the nonparametric functions based on a Bayesian formulation of SNMMs. We evaluate the proposed estimation and inference procedures through a simulation study. Applications of SNMMs are illustrated with analyses of Canadian temperature data.},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1619 of file ../tese/bibtese2.bib
+ : The 
+ :     unsaturated soil hydraulic properties are needed for many different applications in soil hydrology. Pedotransfer functions (PTFs) have proven to be useful to indirectly estimate these parameters from more easily obtainable soil data. Until now no studies have been conducted to derive or verify PTFs for calcareous soils, which hydraulically may not behave the same as non-calcareous soils. The objectives of this study were to assess the influence of soil CaCO3 on the soil water retention characteristics of some calcareous soils, and to derive PTFs for these soils. Two data sets were used to derive and evaluate the established PTFs. Data set 1 containing 220 samples was employed as a calibration set for multiple linear regression. An independent data set containing 55 soil samples from a different location served to verify the derived PTFs. No significant difference in accuracy was found between the PTFs with and without CaCO3 in terms of estimating specific soil water retention values or the van Genuchten soil hydraulic parameters. Compared with the Rosetta PTFs of Schaap et al. (2001), the derived point and parametric PTFs provided better accuracy with average RMSE values of 0.028 and 0.107 cm3 cm-3, respectively.},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1858 of file ../tese/bibtese2.bib
+ : In 
+ :    longitudinal research investigators often measure multiple variables at multiple points in time and are interested in investigating individual differences in patterns of change on those variables. In the vast majority of applications, researchers focus on studying change in one variable at a time. In this article we consider methods for studying relations1.1ips between patterns of change on different variables. We show how the multilevel modeling framework, which is often used to study univariate change, can be extended to the multivariate case to yield estimates of covariances of parameters representing aspects of change on different variables. We illustrate this approach using data from a study of physiological response to marital conflict in older married couples, showing a substantial correlation between rate of linear change on different stress-related hormones during conflict. We also consider how similar issues can be studied using extensions of latent curve models to the multivariate case, and we show how such models are related to multivariate multilevel models.},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 2649 of file ../tese/bibtese2.bib
+ : I 
+ :   describe how multilevel logistic regression can be used to assess the consistency of an individual's response pattern with an item response theory measurement model. Specifically, by treating item responses as being nested within individuals, multilevel logistic regression is used to estimate a person-response curve that models how an individual's item endorsement rate decreases as a function of item difficulty. The slope of an individual's person-response curve is used as an indicator of the degree of response consistency or person-fit. I argue that the proposed multilevel modeling approach to person-fit assessment has several potential advantages over traditional techniques. The most important advantage being that the multilevel modeling approach allows explanatory variables to be entered into the model so that the causes of response inconsistency or differential test functioning can be investigated.},
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 2723 of file ../tese/bibtese2.bib
+ : Structural 
+ :            regression predicted soil/site-specific optimal ranges of 3 <= OC <= 4 wt.\%, 1.10 <= BD <= 1.23 Mg m- 3, 0.16 <= ACB <= 0.22 m3 m- 3, 0.07 <= ACM <= 0.10 m3 m- 3, and 0.09 <= PORP <= 0.13 m3 m- 3, which are either narrower than the corresponding literature guidelines, or partially overlapping the guidelines. The regressions also provided information that is not currently available in the literature, including a possible optimal range for FC (0.30 <= FC <= 0.35 m3 m- 3), and plausible "upper limits" to the optimal ranges for ACB, ACM and PORP (see above). Optimal ranges were not obtainable for PORM and PAWC because they were effectively constant among the cropping and sod treatments. A questionably high optimal range was obtained for KS (8 × 10- 2 <= KS <= 7 × 10- 1 cm s- 1), and this was attributed to the perturbing effects of large, highly water-conductive macropores. The overall SPQ at the field site was judged by structural regression to be "poor" for maize-soybean cropping, "good" for bluegrass sod, and "fair" for virgin soil.
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 2800 of file ../tese/bibtese2.bib
+ : The 
+ :     objective of this study was to evaluate some published PTFs in the light of their ability to quantify the spatial structure and variability of soil water retention adequately. Four PTFs were tested: two provided only values of water content at specific pressure potentials (PTF Group A), whereas the remaining two estimated the parameters of closed-form relations describing the water retention function (PTF Group B). Measured data for testing were obtained from undisturbed soil samples taken from the top layer of different soils along a 5 km transect with constant spacing of 50 m.
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
++---------------------------------------------------------+
+| Estilo bibliografico abnt-alf.bst versao 1.53           |
+| Implementa a NBR6023, NBR10520 e NBR10523               |
+| Em caso de duvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+You've used 13 entries,
+            6522 wiz_defined-function locations,
+            1232 strings with 10666 characters,
+and the built_in function-call counts, 9129 in all, are:
+= -- 784
+> -- 269
+< -- 23
++ -- 144
+- -- 84
+* -- 598
+:= -- 1168
+add.period$ -- 31
+call.type$ -- 16
+change.case$ -- 104
+chr.to.int$ -- 50
+cite$ -- 8
+duplicate$ -- 389
+empty$ -- 786
+format.name$ -- 380
+if$ -- 2261
+int.to.chr$ -- 4
+int.to.str$ -- 5
+missing$ -- 211
+newline$ -- 44
+num.names$ -- 40
+pop$ -- 239
+preamble$ -- 1
+purify$ -- 48
+quote$ -- 0
+skip$ -- 699
+stack$ -- 1
+substring$ -- 337
+swap$ -- 194
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 62
+width$ -- 0
+write$ -- 138
+(There were 7 error messages)

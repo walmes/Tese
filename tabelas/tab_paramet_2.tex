@@ -1,0 +1,77 @@
+% A TABELA TEM QUE TER 19 CM DE COLUNA NO, E 12.6 CM DE LINHAS
+%\begin{tabular}{|c|c|c|c|c|}
+%\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|c|c|c|c|c|}
+%\begin{tabular}{|C{0.4cm}|C{5.3cm}|C{2.7cm}|C{2.7cm}|C{5.5cm}|} % ESSA SOMA TEM QUE DAR 16.6
+%\begin{tabular}{C{0.4cm}C{5.3cm}C{2.7cm}C{2.7cm}C{5.5cm}} % ESSA SOMA TEM QUE DAR 16.6
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc}
+\hline 
+id &
+Modelo original & $\vartheta = g(\boldsymbol{\theta})$ & $\theta_i = g^{-1}(\vartheta, \boldsymbol{\theta}_{-i})$ & Modelo reparametrizado\tabularnewline
+\hline 
+%---------------------------------------------------------------------------------------------------
+% michaelis menten, monod, hiperbola de 2 parametros
+1 &
+$\displaystyle\frac{\theta_a x}{\theta_v+x}$ &
+$\displaystyle\vartheta_q = \theta_v\left(\frac{q}{1-q}\right)$ &
+$\displaystyle\theta_v = \vartheta_q\left(\frac{1-q}{q}\right)$ &
+$\displaystyle\frac{\theta_a x}{\vartheta_q\left(\frac{1-q}{q}\right)+x}$\tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo michaelis aumentado crescente
+2 &
+$\displaystyle\frac{\theta_a}{1+\left(\frac{\theta_v}{x}\right)^{\theta_c}}$ &
+$\displaystyle\vartheta_q = \theta_v\left(\frac{1-q}{q}\right)^{-1/\theta_c}$ &
+$\displaystyle\theta_v = \vartheta_q\left(\frac{1-q}{q}\right)^{1/\theta_c} $ &
+$\displaystyle\frac{\theta_a}{1+\frac{1-q}{q}\left(\frac{\vartheta_q}{x}\right)^{\theta_c}}$\tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo michaelis aumentado decrescente
+3 &
+$\displaystyle\frac{\theta_a}{1+\left(\frac{x}{\theta_v}\right)^{\theta_c}}$ &
+$\displaystyle\vartheta_q = \theta_v\left(\frac{1-q}{q}\right)^{1/\theta_c}$ &
+$\displaystyle\theta_v = \vartheta_q\left(\frac{1-q}{q}\right)^{-1/\theta_c} $ &
+$\displaystyle\frac{\theta_a}{1+\frac{1-q}{q}\left(\frac{x}{\vartheta_q}\right)^{\theta_c}}$\tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo michaelis aumentado de novo
+4 &
+$\displaystyle\frac{\theta_a x^{\theta_c}}{\theta_v+x^{\theta_c}}$ &
+$\displaystyle\vartheta_q = \left(\frac{\theta_v q}{1-q}\right)^{1/\theta_c}$ &
+$\displaystyle\theta_v = \vartheta_q^{\theta_c} \frac{1-q}{q}$ &
+$\displaystyle\frac{\theta_a x^{\theta_c}}{\vartheta_q\left(\frac{1-q}{q}\right)+x^{\theta_c}}$\tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo exponencial assintótico
+5 &
+$\theta_a(1-\exp\{-\theta_c x\})$ &
+$\vartheta_q = \displaystyle-\frac{\log(1-q)}{\theta_c}$ &
+$\theta_c = \displaystyle-\frac{\log(1-q)}{\vartheta_q}$ &
+$\theta_a(1-\exp\{x \log(1-q)/\vartheta_q\})$\tabularnewline
+%\hline
+%---------------------------------------------------------------------------------------------------
+% modelo exponencial assintótico para tempo de aquecimento
+6 &
+$\begin{cases} \theta_a(1-\exp\{-\theta_1(x-\theta_0)\}) &,\, x\geq \theta_0 \\  0 &,\, x<\theta_0  \end{cases}$ &
+$\displaystyle\vartheta_q = \frac{\log(1-q)}{\theta_1}+\theta_0$ &
+$\displaystyle\theta_1 = \frac{\log(1-q)}{\vartheta_q-\theta_0}$ &
+$\displaystyle \theta_a\left(1-\exp\left\{\log(1-q)\left(\frac{x-\theta_0}{\vartheta_q-\theta_0}\right)\right\}\right)$\tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo potência para dose econômica
+7 &
+$\theta_0-\theta_1 x^{\theta_2}$ &
+$\vartheta_q = \displaystyle\frac{q}{\theta_1}^{1/\theta_2}$ &
+$\displaystyle\theta_2 = \frac{\log(q)-\log(\theta_1)}{\log(\vartheta_q)} $ &
+$\displaystyle\theta_0-\theta_1 x^{\frac{\log(q)-\log(\theta_1)}{\log(\vartheta_q)}}$\tabularnewline
+%\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo assintótico, também conhecido como (A+B)-B*C^x ou A-exp(-B)*C^x
+8 &
+$\theta_0+\theta_1(1-\theta_c^x)$ &
+$\displaystyle\vartheta_q = \frac{\log(1+q/\theta_1)}{\log(\theta_c)}$ &
+$\displaystyle\theta_1 = -\frac{q}{1-\theta_c^{\vartheta_q}}$ &
+$\displaystyle\theta_0-q \left(\frac{1-\theta_c^x}{1-\theta_c^{\vartheta_q}}\right)$\tabularnewline
+\hline 
+%\end{tabular}
+\end{tabular*}
+

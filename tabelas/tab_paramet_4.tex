@@ -1,0 +1,53 @@
+%\begin{tabular}{|c|c|c|c|c|}
+%\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|c|c|c|c|c|}
+%\begin{tabular}{|C{0.4cm}|C{3.9cm}|C{3.5cm}|C{3.3cm}|C{5.5cm}|}
+%\begin{tabular}{C{0.4cm}C{3.9cm}C{3.5cm}C{3.3cm}C{5.5cm}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc}
+\hline 
+id &
+Modelo original & $\vartheta = g(\boldsymbol{\theta})$ & $\theta_i = g^{-1}(\vartheta, \boldsymbol{\theta}_{-i})$ & Modelo reparametrizado\tabularnewline
+\hline 
+%---------------------------------------------------------------------------------------------------
+% modelo logístico para fração de vida e dose máxima
+\multirow{2}{*}{15} &
+\multirow{2}{*}{$\displaystyle\frac{\theta_a}{1+\exp\{\theta_0+\theta_1 x\}}$} &
+$\displaystyle\vartheta_q = \frac{1}{\theta_1}\left(\log\left(\frac{1-q}{q}\right)-\theta_0 \right)  $ &
+$\displaystyle\theta_0 = \log\left(\frac{1-q}{q}\right)-\theta_1\vartheta_q$ &
+\multirow{2}{*}{$\displaystyle\frac{\theta_a}{1+\left(\frac{1-q}{q}\right)\exp\left\{-4\vartheta_t(x-\vartheta_q) \right\}}$}\tabularnewline
+ & 
+ &
+$\displaystyle\vartheta_t = -\frac{\theta_1}{4}$ &
+$\displaystyle\theta_1 = -4\vartheta_t$
+ & \tabularnewline
+%\hline
+%---------------------------------------------------------------------------------------------------
+% modelo gompertz para fração de vida
+ 16 &
+$\theta_a\exp\{-\exp\{\theta_0+\theta_1 x\}\}$ &
+$\displaystyle\vartheta_q = \frac{\log(-\log(q))-\theta_0}{\theta_1}$ &
+$\displaystyle\theta_1 = \frac{\log(-\log(q))-\theta_0}{\vartheta_x}$ &
+$\displaystyle \theta_a\exp\{\log(q)\exp\{\theta_0(1-x/\vartheta_x)\}\}$\tabularnewline
+%\hline
+%---------------------------------------------------------------------------------------------------
+% modelo de Richards
+% 16 &
+%$\displaystyle\frac{\theta_a}{(1+\exp\{\theta_0+\theta_1 x\})^{1/\theta_2}}$ &
+%$\displaystyle\vartheta_q = \frac{\log((1-q^{\theta_2})/q^{\theta^2})-\theta_0}{\theta_1}$ &
+%$\displaystyle\theta_1 = \frac{\log(\frac{1-q^{\theta_2}}{q^{\theta^2}})-\theta_0}{\vartheta_q}$ &
+%$\displaystyle\frac{\theta_a}{(1+\exp\{\theta_0(1-x/\vartheta_q)+\log((1-q^{\theta_2})/q^{\theta_2})x/\vartheta_q\})^{1/\theta_2}}$\tabularnewline
+%\hline
+%---------------------------------------------------------------------------------------------------
+% modelo de van Genuchten
+\multirow{2}{*}{17} &
+\multirow{2}{*}{$\displaystyle \theta_r+\frac{\theta_s-\theta_r}{(1+\exp\{\theta_a+x\}^{\theta_n})^{\theta_m}}$} &
+$\displaystyle\vartheta_i = -\theta_a-\log(\theta_m)/\theta_n$ &
+$\theta_a = -\vartheta_i-\log(\theta_m)/\theta_n $ &
+\multirow{2}{*}{$\displaystyle \theta_r-\frac{\vartheta_s}{\theta_n}\frac{(1+1/\theta_m)^{\theta_m+1}}{(1+\exp\{\theta_n(x-\vartheta_i)\}/\theta_m)^{\theta_m}}$}\tabularnewline
+ & 
+ &
+$\displaystyle\vartheta_s = -\frac{\theta_n(\theta_s-\theta_r)}{(1-1/\theta_m)^{\theta_m+1}}$ &
+$\theta_s-\theta_r = -\frac{\vartheta_s}{\theta_n}(1+1/\theta_m)^{\theta_m+1} $
+ & \tabularnewline
+\hline 
+%\end{tabular}
+\end{tabular*}

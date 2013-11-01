@@ -1,0 +1,219 @@
+%==========================================================================================
+% Pacotes
+
+%% definições relacionadas a idioma
+\usepackage[brazil]{babel}
+
+%% codificação de caracteres
+%% http://tex.stackexchange.com/questions/664/why-should-i-use-usepackaget1fontenc
+%% http://tex.stackexchange.com/questions/44694/fontenc-vs-inputenc
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}    % usar se salvar com codificação UTF-8
+%\usepackage[latin1]{inputenc}  % usar se salvar com codificação ISO
+
+%% definições das margens
+\usepackage[top=4.5cm,left=4.5cm,right=4.5cm,bottom=4.5cm]{geometry}
+
+%% para inserir figuras em diversas extensões
+\usepackage{graphicx}
+
+%% controla o uso de Teorema, Definição, Exemplo, Demonstração, Exercício
+\usepackage{amsthm}
+
+%% todos os pacotes da AMS (American Mathematical Society), inúmeros símbolos
+\usepackage{amsfonts,amssymb,amsxtra,empheq}  
+\usepackage[mathscr]{eucal}
+
+%% permite o uso de vírgula como separador decimal no ambiente matemático
+\usepackage{icomma} 
+
+%% permite o uso de comentários entre \begin{comment}...\end{comment}                 
+\usepackage{comment}
+
+%% cores em palavras, frases, etc. \textcolor{red}{text in red}
+\usepackage{color}
+
+%% permite a indentação do 1º paragráfo após um título de seção, capítulo
+\usepackage{indentfirst}
+%%%% recuo da primeira linha de cada parágrafo
+  %\setlength{\parindent}{1.2cm}
+
+%% permite a construção do texto colunas
+\usepackage{multicol}
+
+%% controla o espaçamento entre linhas
+\usepackage{setspace}
+%%%% espaçamento 1.5 linha no texto \begin{spacing}{1.0}...\end{spacing}
+  \onehalfspace                      
+
+%% permite desenhar
+%% http://www.texample.net/tikz/
+%\usepackage{tikz}
+%\usetikzlibrary{decorations.pathreplacing}
+%\usetikzlibrary{arrows,decorations.pathmorphing}
+%\usetikzlibrary{shapes,backgrounds}  
+  
+%% para colocar a legenda indentada como formato da UFLA
+\usepackage[format=hang, labelsep=quad]{caption}
+
+%% controla objetos flutuantes e permite definir novas classes
+%% útil para criar a classe de fluantes 'program', para código
+\usepackage{float}
+%%%% algumas formas de denifir
+%   \floatstyle{ruled}
+%   \newfloat{Input}{tbp}{lop}[section]
+%   \floatname{Input}{Program}
+
+%% controla novos ambientes que listam índices, e.g. lista de anexos
+\usepackage{listings}
+
+%% texto em caixas
+\usepackage{boxedminipage}
+
+%% controle e definição de ambientes numerados
+%% listas mais compactas, úteis para salvar espaço
+%% http://tex.stackexchange.com/questions/62009/paralist-environment
+\usepackage{paralist}
+
+%% para rotacionar tabela \begin{sidewaystable}
+\usepackage{rotating} 
+
+%% rotacionar texto \begin{landscape}
+\usepackage{lscape} 
+
+%% para ter tabelas com linhas mescladas
+\usepackage{multirow}
+
+%% para inserir epigrafe
+\usepackage{epigraph}
+
+%% notas de rodapé
+\usepackage[symbol, hang, flushmargin]{footmisc} 
+
+% controle e definições para tamanho de colunas em tabelas
+\usepackage{array} 
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%==========================================================================================
+% Definições
+
+%% redefine o espaçamento entre linhas
+\renewcommand{\baselinestretch}{1.2cm}
+\def\onehalspacing{1.5}
+
+%% permite leitura do caracter @ nas definições que seguem
+\makeatletter
+
+%%.....................................................
+%% Sessões
+
+%% definição do texto título da sessão
+\renewcommand{\section}{\@startsection
+{section}%                     % the name
+{1}%                           % the level
+{0mm}%                         % the indent
+{-\baselineskip}%              % the before skip
+{1.\baselineskip}%             % the after skip
+{\noindent\normalsize\textbf}} % the style
+
+%% definição do texto título da subsessão
+\renewcommand{\subsection}{\@startsection
+{subsection}%                  % the name
+{2}%                           % the level
+{0mm}%                         % the indent
+{-\baselineskip}%              % the before skip
+{0.1\baselineskip}%            % the after skip
+{\noindent\normalsize\textbf}} % the style
+\makeatother
+
+%% desabilita o uso do @
+\makeatother
+
+%%.....................................................
+%% Sumário
+
+%% sumário alinhado à esquerda
+\usepackage{titletoc}
+\def\distnumber{2.3em}
+
+\titlecontents{section}       % set formatting for \section
+[\distnumber]                 % adjust left margin
+{\bfseries}                   % font formatting
+{\contentslabel{\distnumber}} % section label and offset
+{\hspace*{-\distnumber}}
+{\normalfont\titlerule*[1pc]{.}\contentspage}
+
+\titlecontents{subsection}    % set formatting for \section
+[\distnumber]                 % adjust left margin
+{\bfseries}                   % font formatting
+{\contentslabel{\distnumber}} % section label and offset
+{\hspace*{-\distnumber}}
+{\normalfont\titlerule*[1pc]{.}\contentspage}
+
+\setcounter{tocdepth}{4}
+\renewcommand{\baselinestretch}{1.5} % espaçamento entre linha
+\numberwithin{equation}{section}     % numerar equação por seção
+
+%%.....................................................
+%% Flutuantes e equações
+
+%% nomes
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabela}
+
+%% profundidade de numeração
+%\numberwithin{figure}{section}
+%\numberwithin{table}{section}
+%\numberwithin{equation}{section}
+
+%%.....................................................
+%% Paginação
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+
+%%.....................................................
+%% Fontes
+
+%% fonte para o texto
+\usepackage{times}
+
+%% fonte para ambiente matemático mais parecido com Times
+\usepackage{txfonts}
+
+%% fonte para ambiente de código (monospaced)
+\usepackage[scaled=0.85]{beramono}
+
+%%.....................................................
+%% Referências e hyperlinks
+
+\usepackage{hyperref} %transformas o sumário e as citações em hiperlinks
+\hypersetup{
+%    bookmarks=true,         % show bookmarks bar?
+%    unicode=false,          % non-Latin characters in Acrobat's bookmarks
+%    pdftoolbar=true,        % show Acrobat's toolbar?
+%    pdfmenubar=true,        % show Acrobat's menu?
+%    pdffitwindow=true,      % page fit to window when opened
+  pdftitle={Parametrizações interpretáveis em modelos não lineares},
+  pdfauthor={Walmes Marques Zeviani},
+  pdfsubject={Tese de Doutorado},
+  pdfcreator={Walmes Marques Zeviani},
+  pdfproducer={Walmes Marques Zeviani},
+  pdfkeywords={Verossimilhança, Curvatura, Método delta, van Genuchten},
+%    pdfnewwindow=true,      % links in new window
+  colorlinks=true,           % false: boxed links; true: colored links
+  linkcolor=black,           % color of internal links
+  citecolor=black,           % color of links to bibliography
+  filecolor=red,             % color of file links
+  urlcolor=cyan              % color of external links
+}
+
+%%.....................................................
+%% Comandos
+
+\newcommand{\lin}{\noindent \rule[4mm]{\textwidth}{0.1ex}}
+
+%==========================================================================================

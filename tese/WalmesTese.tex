@@ -1,0 +1,361 @@
+%=========================================================================================================
+
+\documentclass[11pt,letterpaper]{article}
+
+%% arquivo de definições de estilo documento
+\input{preambulo.tex}
+
+%% para referencias bibliográficas no padrão ABNT
+\usepackage[abnt-substyle=UFLA,abnt-emphasize=bf,abnt-etal-list=3,abnt-and-type=e]{abntcite}
+
+%=========================================================================================================
+% Definições de conteúdo
+
+%% título em português e inglês e caixa alta
+\def\tesetitle{Parametrizações interpretáveis em modelos não lineares}
+\def\tesetitleeng{Interpretable parametrization in nonlinear models}
+\def\tesetitlecap{\expandafter\MakeUppercase\expandafter{\tesetitle}}
+
+%% autor e abreviações
+\def\teseauthor{Walmes Marques Zeviani}
+\def\teseauthorcap{\expandafter\MakeUppercase\expandafter{\teseauthor}}
+\def\teseauthorrev{Zeviani, Walmes Marques}
+\def\teseauthorcrv{ZEVIANI, Walmes Marques}
+
+%% ano
+\def\teseyear{2013}
+
+%% orientador
+\def\teseorientador{Joel Augusto Muniz}
+
+%% palavras com infenização manual (não contidas no dicionário)
+\hyphenation{ne-ces-s\'arias fa-zen-do pa-r\^{a}-me-tro a-va-li-ar vi-san-do pr\'o-prias
+              Ge-nu-chten fi-ca-ram a-do-\c{c}\~ao in-ter-pre-t\'a-veis mo-no-mo-le-cu-lar
+              re-pa-ra-me-tri-z\'a-lo}
+
+\begin{document}
+\pagestyle{empty}
+
+%=========================================================================================================
+
+%% inclui as capas, folhas de rosto, etc
+\input{capaspretexto.tex}
+
+%=========================================================================================================
+
+\newpage
+\pagestyle{empty}
+
+%% inclui resumo e abstract geral
+\input{resumos.tex}
+
+%=========================================================================================================
+% Sumário
+
+\newpage
+
+\begin{center}
+\renewcommand{\contentsname}{\normalsize{SUMÁRIO}}
+\begin{spacing}{1.4}
+\tableofcontents
+\thispagestyle{empty}
+\end{spacing}
+\end{center}
+
+%=========================================================================================================
+%111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+% Capítulo 1
+
+\newpage
+\pagenumbering{arabic}
+\pagestyle{fancy}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0ex}
+
+%% reinicia contadores de página e demais ambientes
+\setcounter{page}{14}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+
+%% definições de título
+\def\titlecapa{Procedimento para obter parametrizações interpretáveis em modelos não lineares}
+\def\titlecapA{\expandafter\MakeUppercase\expandafter{\titlecapa}}
+\addcontentsline{toc}{section}{\hspace*{\distnumber}CAPÍTULO 1 \titlecapa}
+
+%%.....................................................
+%% inclui título
+
+\noindent
+\begin{minipage}[t]{0.2\textwidth}
+\textbf{CAPÍTULO 1}
+\end{minipage}
+\begin{minipage}[t]{0.8\textwidth}
+\begin{flushleft}
+\textbf{\titlecapA} 
+\end{flushleft}
+\end{minipage}
+\vspace{0.8cm}
+
+%%.....................................................
+%% inclui resumo e abstract
+
+\begin{center}
+\section*{RESUMO} 
+\end{center}
+
+\begin{singlespace}
+\input{../cap1/cap1resumo.tex}
+\end{singlespace}
+
+\newpage
+\begin{center}
+\section*{ABSTRACT} 
+\end{center}
+
+\begin{singlespace}
+\input{../cap1/cap1abstract.tex}
+\end{singlespace}
+
+%%.....................................................
+%% inclui capítulo
+
+\newpage
+\input{../cap1/cap1.tex}
+
+%%.....................................................
+%% inclui referências
+
+\begin{flushleft}
+\renewcommand\refname{}
+\vspace*{-0.9cm}
+\begin{singlespace}
+\input{../cap1/cap1introduc-corrigido.bbl} 
+\end{singlespace}
+\end{flushleft}
+
+%=========================================================================================================
+%222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+% Capitulo 2
+
+\newpage
+
+%% reinicia contadores de página e demais ambientes
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\renewcommand*{\theHsection}{chX.\the\value{section}}
+
+%% definições de título
+\def\titlecapc{Modelo não linear para o nível de dano econômico da desfolha no algodoeiro}
+\def\titlecapC{\expandafter\MakeUppercase\expandafter{\titlecapc}}
+\addcontentsline{toc}{section}{\hspace*{\distnumber}CAPÍTULO 2 \titlecapc}
+
+%%.....................................................
+%% inclui título
+
+\noindent
+\begin{minipage}[t]{0.2\textwidth}
+\textbf{CAPÍTULO 2}
+\end{minipage}
+\begin{minipage}[t]{0.8\textwidth}
+\begin{flushleft}
+\textbf{\titlecapC} 
+\end{flushleft}
+\end{minipage}
+\vspace{0.8cm}
+
+%%.....................................................
+%% inclui resumo e abstract
+
+\begin{center}
+\section*{RESUMO} 
+\end{center}
+
+\begin{singlespace}
+\input{../cap3/cap3resumo.tex}
+\end{singlespace}
+
+\newpage
+\begin{center}
+\section*{ABSTRACT} 
+\end{center}
+
+\begin{singlespace}
+\input{../cap3/cap3abstract.tex}
+\end{singlespace}
+
+%%.....................................................
+%% inclui capítulo
+
+\newpage
+\input{../cap3/cap3.tex}
+
+%%.....................................................
+%% inclui referências
+
+\begin{flushleft}
+\renewcommand\refname{}
+\vspace*{-0.9cm}
+\begin{singlespace}
+\input{../cap3/cap3nls-corrigido.bbl} 
+\end{singlespace}
+\end{flushleft}
+
+%%.....................................................
+%% inclui anexos
+
+\newpage
+\addcontentsline{toc}{section}{\hspace*{\distnumber}ANEXOS}
+\begin{center}
+\section*{ANEXOS} 
+\end{center}
+
+\begin{singlespace}
+\noindent{{ANEXO A$\,\,$} Código R reproduzível correspondente ao
+ajuste do modelo potência reparametrizado para inferência sobre o nível de dano
+econômico da desfolha no algodoeiro.
+Disponível online
+em: \texttt{http://www.leg.ufpr.br/\~{}walmes /TESE/anexoDESF.R}}
+\end{singlespace}
+
+\noindent
+\lin
+\begin{small}
+\linespread{0.86}
+\input{../scripts/anexoDESF.R}
+\lin
+\end{small}
+
+\begin{table}
+\noindent{{ANEXO B$\,\,$} Peso de capulhos produzido (g) ao final do ciclo a
+cada duas plantas de algodão em
+  função do nível de desfolha artifical e estágio fenológico.}\\
+\begin{center}
+ \input{../tabelas/anexotabDESF.txt}
+\end{center}
+\end{table}
+
+
+%=========================================================================================================
+%333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+% Capítulo 3
+
+\newpage
+
+%% reinicia contadores
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\renewcommand*{\theHsection}{chY.\the\value{section}}
+
+%% definições de título
+\def\titlecapb{Parametrização do modelo van Genuchten para inferência sobre os parâmetros $S$ e $I$}
+\def\titlecapB{\expandafter\MakeUppercase\expandafter{\titlecapb}}
+\addcontentsline{toc}{section}{\hspace*{\distnumber}CAPÍTULO 3 \titlecapb}
+
+%%.....................................................
+%% inclui título
+
+\noindent
+\begin{minipage}[t]{0.2\textwidth}
+\textbf{CAPÍTULO 3}
+\end{minipage}
+\begin{minipage}[t]{0.8\textwidth}
+\begin{flushleft}
+\textbf{\titlecapB} 
+\end{flushleft}
+\end{minipage}
+\vspace{0.8cm}
+
+%%.....................................................
+%% inclui resumo e abstract
+
+\begin{center}
+\section*{RESUMO} 
+\end{center}
+
+\begin{singlespace}
+\input{../cap2/cap2resumo.tex}
+\end{singlespace}
+
+\newpage
+\begin{center}
+\section*{ABSTRACT} 
+\end{center}
+
+\begin{singlespace}
+\input{../cap2/cap2abstract.tex}
+\end{singlespace}
+
+%%.....................................................
+%% inclui capítulo
+
+\newpage
+\input{../cap2/cap2.tex}
+
+%%.....................................................
+%% inclui referências
+
+\begin{flushleft}
+\renewcommand\refname{}
+\vspace*{-0.9cm}
+\begin{singlespace}
+\input{../cap2/cap2nlme-corrigido.bbl} 
+\end{singlespace}
+\end{flushleft}
+
+%%.....................................................
+%% inclui anexos
+
+\newpage
+\addcontentsline{toc}{section}{\hspace*{\distnumber}ANEXOS}
+\begin{center}
+\section*{ANEXOS} 
+\end{center}
+
+\begin{singlespace}
+\noindent{{ANEXO A$\,\,$} Código R reproduzível correspondente ao
+ajuste do modelo van Genuchten reparametrizado. Disponível online
+em: \texttt{http://www.leg.ufpr.br/ \~{}walmes/TESE/anexoCRA.R}}
+\end{singlespace}
+
+\noindent
+\lin
+\begin{small}
+\linespread{0.86}
+\input{../scripts/anexoCRA.R}
+\lin
+\end{small}
+
+\def\capanexo{Conteúdo de água do solo (m$^3$ m$^{-3}$) em função 
+da tensão matricial (kPa), da profundidade (cm) e da unidade 
+experimental (UE) para amostras coletadas na}
+
+\begin{sidewaystable}
+\noindent{{ANEXO B$\,\,$} \capanexo{} entre linha.}
+\begin{center}
+ \input{../tabelas/anexotabEL.txt}
+\end{center}
+\end{sidewaystable}
+
+\begin{sidewaystable}\label{ultima}
+\noindent{{ANEXO C$\,\,$} \capanexo{} linha.} \\
+\begin{center}
+ \input{../tabelas/anexotabL.txt}
+\end{center}
+\end{sidewaystable}
+
+%% NOTA: \label última em um elemento que esteja na última página é
+%% usado para retornar o total de páginas que aparece lá na caixa da
+%% ficha catalográfica. Assim não precisa ficar inserindo manualmente.
+
+%=========================================================================================================
+
+\end{document}
+
+%=========================================================================================================

@@ -1,0 +1,78 @@
+%==========================================================================================
+
+\documentclass[10pt]{article}
+
+\input{../tese/preambulosimples.tex}
+
+\title{Uma parametrização do modelo van Genuchten para inferência sobre os parâmetros $S$ e $I$}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{cap2resumo.tex}
+\end{abstract}
+
+\input{cap2.tex}
+
+% Use isso descomentado durante edição.
+% Quando concluir a Tese, comente iss e use
+% o código do bloco abaixo.
+\begin{singlespace}
+\renewcommand\refname{}
+\begin{flushleft}
+\bibliography{../tese/bibtese2}
+\end{flushleft}
+\end{singlespace}
+
+%% Em cap2nlme-corrigido.bbl foi feita correção manual de
+%% algumas referências como por exemplo as citações
+%% de Dissertação e Tese.
+%% Então deixa-se de usar o arquivo cap2nlme.bbl gerado
+%% automaticamente pelo abntcite, mas isso é só ao final.
+% \begin{singlespace}
+% \begin{flushleft}
+% \renewcommand\refname{}
+% \vspace*{-1.5cm}
+% \input{cap2nlme-corrigido.bbl}
+% \end{flushleft}
+% \end{singlespace}
+
+\section{Anexos}
+
+\begin{singlespace}
+\noindent{{ANEXO A:$\,\,$} Código R reproduzível correspondente ao
+ajuste do modelo van Genuchten reparametrizado para inferência sobre os parâmetros $I$ e $S$.
+Disponível online
+em: \texttt{http://www.leg.ufpr.br/\~{}walmes /TESE/anexoCRA.R}}
+\end{singlespace}
+\noindent \rule[4mm]{\textwidth}{0.1ex}
+\begin{small}
+\linespread{0.7}
+\vspace{-1cm}
+\input{../scripts/anexoCRA.R}
+\noindent \rule[4mm]{\textwidth}{0.1ex}
+\end{small}
+
+\def\capanexo{Conteúdo de água do solo (m$^3$ m$^{-3}$) em função da tensão matricial (kPa), da profundidade (cm)
+ e da unidade experimental (UE) para amostras coletadas na}
+
+\begin{sidewaystable}
+ \caption{\capanexo{} entre linha.}\label{tab:anexoEL}
+\begin{center}
+ \input{../tabelas/anexotabEL.txt}
+\end{center}
+\end{sidewaystable}
+
+\begin{sidewaystable}
+ \caption{\capanexo{} linha.}\label{tab:anexoL}
+\begin{center}
+ \input{../tabelas/anexotabL.txt}
+\end{center}
+\end{sidewaystable}
+
+\end{document}
+
+%==========================================================================================

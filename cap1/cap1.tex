@@ -1,0 +1,183 @@
+\section{INTRODUÇÃO}
+
+A ideia básica da regressão não linear é a mesma da regressão linear:
+relacionar uma resposta $Y$ com um vetor de variáveis preditoras
+$\mathbf{x} = (x_1,\ldots,x_k)^\top$. Os modelos de regressão não
+linear são caracterizados pelo fato de a função de predição depender
+não linearmente de algum dos parâmetros. Embora não necessariamente, a
+regressão linear é usada para especificação de modelos puramente
+empíricos, enquanto que os modelos de regressão não linear são
+considerados quando existe algum conhecimento prévio para sustentar
+que a relação entre resposta e preditores segue uma particular forma
+funcional. Tal conhecimento pode ser desde uma equação diferencial que
+remete à particular modelo, como é o caso de modelos de crescimento,
+ou simplesmente uma restrição sobre a função, como o de a função ser
+monótona, típico de curvas de acúmulo, para a qual pode-se ter várias
+funções disponíveis.
+
+Uma das principais vantagens do modelo de regressão não linear, é que
+frequentemente existe interpretação para a maioria de seus parâmetros
+\cite{Schabenberger2002}.  Esses parâmetros então passam ser o foco da
+investigação que, na sua forma mais simples, consiste em determinar
+intervalos de confiança e testar hipóteses. No entanto, uma situação
+comum é a necessidade de fazer inferência sobre uma função dos
+parâmetros \cite{Bender1996}.  Um exemplo simples é a equação de
+segundo grau $f(x) = \beta_0 + \beta_1 x + \beta_2 x^2$, que é um
+modelo linear no qual o ponto crítico $x_c = -\beta_1/(2\beta_2)$ é
+alvo de inferência em situações de otimização de processos
+\cite{Bas2007}. Uma vez estimados seus parâmetros, inferência sobre
+$x_c$ pode ser feita pelo método delta, por simulação Monte Carlo ou
+por métodos \emph{bootstrap} \cite{Seber2003}. Embora tais
+procedimentos permitam obter intervalos de confiança e conduzir testes
+de hipótese, existem ainda outras formas vantajosas de inferir ou
+modelar o parâmetro que são as extensões ligadas aos modelos não
+lineares de efeitos mistos \cite{Pinheiro2009} e a inferência
+bayesiana \cite{Denison2002}.
+
+\newpage
+\section{REPARAMETRIZAÇÃO}
+
+Considere um modelo não linear
+\begin{equation}\label{modelonaolinear}
+f(\mathbf{x}, \boldsymbol{\theta})
+\end{equation}
+em que $f$ é uma função não linear que depende do vetor de covariáveis
+$\mathbf{x}$ e $\boldsymbol{\theta}$ é seu vetor de $p$
+parâmetros. Seja $\vartheta = g(\boldsymbol{\theta})$ o parâmetro de
+interesse em que $g$ é uma função monótona e diferenciável em relação
+à $\boldsymbol{\theta}$.  O objetivo com a reparametrização é fazer
+com que $\vartheta$ seja um elemento do vetor de parâmetros do
+modelo. Isso é obtido por substituição de algum dos $p$ elementos de
+$\boldsymbol{\theta}$ por $\vartheta$.  Para isso, sistematizou-se o
+procedimento em três etapas:
+\begin{enumerate}
+\item Expressar o parâmetro de interesse como função dos elementos de
+  $\boldsymbol{\theta}$, ou seja, $\vartheta =
+  g(\boldsymbol{\theta})$;
+\item Escolher um dos elementos $\theta_i$ de $\boldsymbol{\theta} =
+  (\theta_i, \boldsymbol{\theta}_{-i})$ para ser colocado em função de
+  $\vartheta$ de tal forma a obter $\theta_i =
+  h(\boldsymbol{\theta}_{-i}, \vartheta)$;
+\item Substituir $\theta_i$ em (\ref{modelonaolinear}) pela expressão
+  obtida no passo anterior, $h(\boldsymbol{\theta}_{-i}, \vartheta)$,
+  fazendo as simplificações convenientes. Assim o modelo
+  (\ref{modelonaolinear}) pode ser expresso como
+$$f(\mathbf{x}, \boldsymbol{\theta}_{-i}, \vartheta)$$.
+\end{enumerate}
+A função $h$ é a inversa de $g$ em $\theta_i$.
+
+No passo 2 recomenda-se priorizar aquele elemento de
+$\boldsymbol{\theta}$ com menor
+
+\subsection{Reparametrização 1:1 - Modelos para acúmulo com ênfase na fração do total}
+
+O modelo Michaelis-Menten foi inicialmente proposto para para
+descrever a cinética de reações químicas \cite{Michaelis1913}. Tal
+modelo envolve uma função monótona crescente côncava a partir da
+origem.  Atualmente observa-se a aplicação desse modelo em diversos
+contextos; um deles é a descrição do acúmulo de potássio liberado do
+solo \cite{Zeviani2012}. Sua forma funcional é
+\begin{equation}
+f(x; \theta_a, \theta_v) = \frac{\theta_a x}{\theta_v+x}, \qquad
+x\geq0\,\, (\text{X}),
+\end{equation}
+em que $\theta_a\geq 0$, é a assintota superior (Y) e representa o
+conteúdo total de nutriente liberado, e $\theta_v> 0$ é tempo de meia
+vida (X) ou tempo para fração meio.
+
+\subsection{Outros modelos}
+
+Além dos modelos considerados para exemplificar o procedimento de
+reparametrização, outros modelos frequentemente aplicados em Ciências
+Agrárias foram reparametrizados e estão apresentados nas tabelas de
+\ref{tab:catalog1} à \ref{tab:catalog3}. A descrição de cada modelo,
+em termos de propriedades da função não linear, interpretação dos
+parâmetros é fornecida a seguir em uma lista numerada de acordo com as
+linhas das tabelas de \ref{tab:catalog1} a \ref{tab:catalog3}.
+
+\def\captabelas{Reparametrizações desenvolvidas com ênfase na
+  interpretação dos parâmetros de modelos de regressão não linear
+  aplicados em Ciências Agrárias}
+
+\begin{sidewaystable}
+ \caption{\captabelas}\label{tab:catalog1}
+\begin{small}
+ \input{../tabelas/tab_paramet_2.tex}
+\end{small}
+\end{sidewaystable}
+
+\begin{sidewaystable}
+ \caption{(cont.) \captabelas.}\label{tab:catalog2}
+\begin{small}
+ \input{../tabelas/tab_paramet_3.tex}
+\end{small}
+\end{sidewaystable}
+
+\begin{sidewaystable}
+ \caption{(cont.) \captabelas.}\label{tab:catalog3}
+\begin{small}
+ \input{../tabelas/tab_paramet_4.tex}
+\end{small}
+\end{sidewaystable}
+
+\newpage
+\section{ESTIMAÇÃO}
+
+Nessa seção será feita uma discussão sobre inferência sobre parâmetros
+em modelos de regressão não linear. A inferência baseada em
+verossimilhança será discutida, bem como inferência baseada na sua
+aproximação quadrática. Por fim, uma revisão do método delta será
+apresentada.
+
+\subsection{Verossimilhança}
+
+Seja $f(x, \boldsymbol{\theta})$ um modelo de regressão não linear
+considerado para descrever a média de uma variável aleatória $Y$.
+Considere que $Y$ tenha distribuição normal com variância constante
+$\sigma^2$. Resumidamente, podemos escrever esse modelo como
+\begin{align*}
+ Y &\sim \text{Normal}(\mu(x), \sigma^2)\\
+ \mu(x) &=  f(x,\boldsymbol{\theta}).
+\end{align*}
+A função de verossimilhança do modelo é dada por
+\begin{equation}
+ \text{L}(\boldsymbol{\theta}, \sigma^2) =
+ \prod_{i=1}^{n} \phi(y_i, f(x_i, \boldsymbol\theta), \sigma^2),
+\end{equation}
+em que $\phi$ representa a função densidade da distribuição Normal. O
+estimador de máxima verossimilhança são os valores
+$(\hat{\boldsymbol\theta}, \hat\sigma^2)$ que tornam máximo o valor de
+$\text{L}$. Para estimação, é conveniente trabalhar com o logaritmo da
+função de verossimilhança
+\begin{equation}
+ \ell(\boldsymbol{\theta}, \sigma^2) =
+ \log \text{L}(\boldsymbol{\theta}, \sigma^2).
+\end{equation}
+
+\subsection{Método delta}
+
+O método delta é usado para aproximar a média e a variância de funções
+não lineares de variáveis aleatórias. Dentre suas aplicações, uma das
+mais comuns é relacionada à inferência sobre funções de parâmetros em
+modelos de regressão, como a razão entre parâmetros, transformação de
+um parâmetro, ou valor predito pelo modelo. Exemplos de funções de
+parâmetros estão na terceira coluna das tabelas \ref{tab:catalog1} à
+\ref{tab:catalog3}.
+
+\newpage
+\section{CONSIDERAÇÕES FINAIS}
+
+A conclusão que se antecipa é que, uma vez que é possível
+reparametrizar o modelo para o parâmetro de interesse, inferência
+baseada na verossimilhança deve ser considerada, em segundo, sua
+aproximação quadrática, visto a capacidade de modelagem permitida por
+tais abordagens. Além do mais, as parametrizações devem ser avaliadas,
+seja por meio de medidas de curvatura, gráficos de perfil ou
+simulação, e deve ser escolhida àquela que tenha melhor compromisso
+entre propriedades estatísticas e de interpretação.
+
+\newpage
+\addcontentsline{toc}{section}{\hspace*{\distnumber}REFERÊNCIAS}
+\begin{center}
+\section*{REFERÊNCIAS} 
+\end{center}

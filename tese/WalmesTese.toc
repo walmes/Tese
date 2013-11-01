@@ -1,0 +1,28 @@
+\select@language {brazil}
+\contentsline {section}{\hspace *{2.3em}CAP\IeC {\'I}TULO 1 Procedimento para obter parametriza\IeC {\c c}\IeC {\~o}es interpret\IeC {\'a}veis em modelos n\IeC {\~a}o lineares}{14}{section*.5}
+\contentsline {section}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{16}{section.1}
+\contentsline {section}{\numberline {2}REPARAMETRIZA\IeC {\c C}\IeC {\~A}O}{18}{section.2}
+\contentsline {subsection}{\numberline {2.1}Reparametriza\IeC {\c c}\IeC {\~a}o 1:1 - Modelos para ac\IeC {\'u}mulo com \IeC {\^e}nfase na fra\IeC {\c c}\IeC {\~a}o do total}{19}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Outros modelos}{19}{subsection.2.2}
+\contentsline {section}{\numberline {3}ESTIMA\IeC {\c C}\IeC {\~A}O}{23}{section.3}
+\contentsline {subsection}{\numberline {3.1}Verossimilhan\IeC {\c c}a}{23}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}M\IeC {\'e}todo delta}{24}{subsection.3.2}
+\contentsline {section}{\numberline {4}CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}{25}{section.4}
+\contentsline {section}{\hspace *{2.3em}REFER\IeC {\^E}NCIAS}{26}{section.4}
+\contentsline {section}{\hspace *{2.3em}CAP\IeC {\'I}TULO 2 Modelo n\IeC {\~a}o linear para o n\IeC {\'\i }vel de dano econ\IeC {\^o}mico da desfolha no algodoeiro}{27}{section*.12}
+\contentsline {section}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{29}{section.chX.1}
+\contentsline {section}{\numberline {2}MODELO}{30}{section.chX.2}
+\contentsline {section}{\numberline {3}MATERIAL E M\IeC {\'E}TODOS}{31}{section.chX.3}
+\contentsline {section}{\numberline {4}RESULTADOS E DISCUSS\IeC {\~A}O}{33}{section.chX.4}
+\contentsline {section}{\numberline {5}CONCLUS\IeC {\~O}ES}{34}{section.chX.5}
+\contentsline {section}{\hspace *{2.3em}REFER\IeC {\^E}NCIAS}{35}{section.chX.5}
+\contentsline {section}{\hspace *{2.3em}ANEXOS}{36}{section*.17}
+\contentsline {section}{\hspace *{2.3em}CAP\IeC {\'I}TULO 3 Parametriza\IeC {\c c}\IeC {\~a}o do modelo van Genuchten para infer\IeC {\^e}ncia sobre os par\IeC {\^a}metros $S$ e $I$}{41}{table.caption.19}
+\contentsline {section}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{43}{section.chY.1}
+\contentsline {section}{\numberline {2}RETEN\IeC {\c C}\IeC {\~A}O DE \IeC {\'A}GUA E TAMANHO DE POROS}{44}{section.chY.2}
+\contentsline {section}{\numberline {3}MATERIAL E M\IeC {\'E}TODOS}{45}{section.chY.3}
+\contentsline {section}{\numberline {4}RESULTADOS E DISCUSS\IeC {\~A}O}{47}{section.chY.4}
+\contentsline {section}{\numberline {5}CONCLUS\IeC {\~O}ES}{49}{section.chY.5}
+\contentsline {section}{\hspace *{2.3em}REFER\IeC {\^E}NCIAS}{50}{section.chY.5}
+\contentsline {section}{\hspace *{2.3em}ANEXOS}{51}{section*.25}
+\contentsfinish 

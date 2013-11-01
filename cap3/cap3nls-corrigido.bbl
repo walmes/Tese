@@ -1,0 +1,34 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.53 }
+
+\bibitem[Cheng et al. 1992]{Cheng1992}
+\abntrefinfo{Cheng et al.}{CHENG et al.}{1992}
+{CHENG, R.; EVANS, B.; ILES, T. {Embedded models in non-linear regression}.
+\textbf{Journal of the Royal Statistical Society. Series B (Methodological)},
+  v.~54, n.~3, p. 877--888, ago. 1992.}
+
+\bibitem[Klubertanz et al. 1996]{Klubertanz1996}
+\abntrefinfo{Klubertanz et al.}{KLUBERTANZ et al.}{1996}
+{KLUBERTANZ, T.~H.; PEDIGO, L.~P.; CARLSON, R.~E. {Soybean physiology,
+  regrowth, and senescence in response to defoliation}.
+\textbf{Agronomy Journal}, American Society of Agronomy, v.~88, n.~4, p.~577,
+  jul. 1996.}
+
+\bibitem[Painter e Detling 1981]{Painter1981}
+\abntrefinfo{Painter e Detling}{PAINTER; DETLING}{1981}
+{PAINTER, E.~L.; DETLING, J.~K. {Effects of defoliation on net photosynthesis
+  and regrowth of western wheatgrass}.
+\textbf{Journal of Range Management}, v.~34, n.~1, p. 68--71, jan. 1981.}
+
+\bibitem[Silva et al. 2012]{Silva2012a}
+\abntrefinfo{Silva et al.}{SILVA et al.}{2012}
+{SILVA, A.~M. et al. {Impacto de diferentes n\'{\i}veis de desfolha artificial
+  nos est\'{a}dios fenol\'{o}gicos do algodoeiro}.
+\textbf{Revista de Ci\^{e}ncias Agr\'{a}rias}, v.~35, n.~1, p. 163--172, jun.
+  2012.}
+
+\end{thebibliography}

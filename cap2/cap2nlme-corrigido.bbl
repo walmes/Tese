@@ -1,0 +1,44 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.53 }
+
+\bibitem[Brady e Weil 2009]{Brady2009}
+\abntrefinfo{Brady e Weil}{BRADY; WEIL}{2009}
+{BRADY, N.~C.; WEIL, R.~R. \textbf{{Elements of the nature and properties of
+  soils}}. 3 ed. ed. [S.l.]: Prentice Hall, 2009. 624~p.}
+
+\bibitem[Chesworth 2007]{Chesworth2007}
+\abntrefinfo{Chesworth}{CHESWORTH}{2007}
+{CHESWORTH, W. (Ed.). \textbf{{Encyclopedia of Soil Science (Encyclopedia of
+  Earth Sciences Series)}}. [S.l.]: Springer, 2007. 902~p.}
+
+\bibitem[Dexter 2004]{Dexter2004}
+\abntrefinfo{Dexter}{DEXTER}{2004}
+{DEXTER, A. {Soil physical quality: Part I. Theory, effects of soil texture,
+  density, and organic matter, and effects on root growth}.
+\textbf{Geoderma}, v.~120, n.~3-4, p. 201--214, jun. 2004.}
+
+\bibitem[Genuchten 1980]{VanGenuchten1980}
+\abntrefinfo{Genuchten}{GENUCHTEN}{1980}
+{GENUCHTEN, M.~T. van. {A closed-form equation for predicting the hydraulic
+  conductivity of unsaturated soils}.
+\textbf{Soil Science Society of America Journal}, Soil Science Society of
+  America, v.~44, n.~5, p. 892--898, maio 1980.}
+
+\bibitem[Reynolds et al. 2002]{Reynolds2002a}
+\abntrefinfo{Reynolds et al.}{REYNOLDS et al.}{2002}
+{REYNOLDS, W. et al. {Indicators of good soil physical quality: density and
+  storage parameters}.
+\textbf{Geoderma}, v.~110, n.~1-2, p. 131--146, nov. 2002.}
+
+\bibitem[Serafim et al. 2011]{Serafim2011}
+\abntrefinfo{Serafim et al.}{SERAFIM et al.}{2011}
+{SERAFIM, M. et al. {Sistema conservacionista e de manejo intensivo do solo no
+  cultivo de cafeeiros na regi\~{a}o do alto S\~{a}o Francisco, MG: um estudo
+  de caso}.
+\textbf{Bioscience Journal}, v.~27, n.~6, p. 964--977, nov. 2011.}
+
+\end{thebibliography}
