@@ -2,13 +2,20 @@
 
 *Walmes Zeviani* (`walmes@ufpr.br`) - 01/11/2013
 
-Este arquivo é a descrição de como foram organizados os arquivos e os diretórios além de guias gerais para aproveitar a estrutura e conteúdo dos arquivos fornecidos.
+Este arquivo é a descrição de como foram organizados os arquivos e os
+diretórios além de guias gerais para aproveitar a estrutura e conteúdo
+dos arquivos fornecidos.
 
 ## Partição do código fonte
 
-Uma das vantagens da edição de documentos em LaTex é fazer a partição do código fonte. Com iss é possível editar partes de um grande documento, como uma Tese, mantendo as partes separadas em arquivos. 
+Uma das vantagens da edição de documentos em LaTex é fazer a partição
+do código fonte. Com iss é possível editar partes de um grande
+documento, como uma Tese, mantendo as partes separadas em arquivos.
 
-Para ter um maior controle do projeto eu separei todo o conteúdo em diretórios. Cada capítulo tem um diretório. As figuras, tabelas e scripts R também tem seus diretórios. Abaixo está a organização do diretório.
+Para ter um maior controle do projeto eu separei todo o conteúdo em
+diretórios. Cada capítulo tem um diretório. As figuras, tabelas e
+scripts R também tem seus diretórios. Abaixo está a organização do
+diretório.
 
 ```
 .
@@ -80,7 +87,11 @@ Para ter um maior controle do projeto eu separei todo o conteúdo em diretórios
 
 ```
 
-Uma vez que tem-se o código fonte dividido e os elementos que o compõem estão distribuídos em vários diretórios, deve se dar atenção nas chamadas dos arquivos nos `\input{}`, `\includegraphics{}` e `\bibliography{}`. No Linux isso é facilmente controlado por meio da espeficicação relacional de diretórios usando `../` e `./`.
+Uma vez que tem-se o código fonte dividido e os elementos que o
+compõem estão distribuídos em vários diretórios, deve se dar atenção
+nas chamadas dos arquivos nos `\input{}`, `\includegraphics{}` e
+`\bibliography{}`. No Linux isso é facilmente controlado por meio da
+espeficicação relacional de diretórios usando `../` e `./`.
 
 ## Descrição de cada arquivo
 
@@ -91,29 +102,148 @@ Uma vez que tem-se o código fonte dividido e os elementos que o compõem estão
 * `scripts`: diretório com scripts R fornecidos como anexo.
 
 #### Nomes de arquivos
-* `cap?`: prefixo `cap` seguido de número, que indica o capítulo, é o arquivo com o corpo do capítulo. Com sufixos indica-se que elementos textuais se referem.
+
+* `cap?`: prefixo `cap` seguido de número, que indica o capítulo, é o
+    arquivo com o corpo do capítulo. Com sufixos indica-se que
+    elementos textuais se referem.
+
     * `resumo`: resumo do capitulo;
     * `abstract`: abstract do capítulo;
+
 * `WalmesTese`: arquivo mestre que gera o pdf da Tese;
-* `capaspretexto`: capa, folha de rosto, ficha catalográfica, agradecimentos, epigrafe;
+
+* `capaspretexto`: capa, folha de rosto, ficha catalográfica,
+    agradecimentos, epigrafe;
+
 * `resumos`: contém o resumo e abstract geral da Tese;
+
 * `bibtese2`: documentado no item `*.bib`
-* `preambulo`: preambulo de acordo com as normas da UFLA em 2013/1 para Tese;
-* `preambulosimples`: preambulo simples usado para gerar o pdf de cada capítulo isolado.
+
+* `preambulo`: preambulo de acordo com as normas da UFLA em 2013/1
+    para Tese;
+
+* `preambulosimples`: preambulo simples usado para gerar o pdf de cada
+    capítulo isolado.
 
 #### Extensões de arquivos
+
 * `*.tex`: arquivos nativos do latex;
+
 * `*.aux`: auxiliar ao sistema de citação bibliográfica;
-* `*.bbl`: resultado do processo de citação, contém entradas `\bibitem`. No caso de alguma referência não estar de acordo com as normas de citação exigidas, pode-se alterar a forma como ela é escrita e salvar em outro arquivo que no caso está identificado por `-corrigido.bbl`;
+
+* `*.bbl`: resultado do processo de citação, contém entradas
+  `\bibitem`. No caso de alguma referência não estar de acordo com as
+  normas de citação exigidas, pode-se alterar a forma como ela é
+  escrita e salvar em outro arquivo que no caso está identificado por
+  `-corrigido.bbl`;
+
 * `*.blg`: é o log do sistema de referências bibliográficas;
-* `*.log`: log da compilação, que inclui mensagens de erro no caso de falha;
-* `*.bib`: é o arquivo com cadastro das referências bibliográficas. No meu caso esse arquivo é gerado automaticamente pelo Mendeley (gerenciador de referências bibliográficas), sendo assim sua organização/estrutura é definida pelo Mendeley. Esse arquivo também pode ser criado manualmente;
+
+* `*.log`: log da compilação, que inclui mensagens de erro no caso de
+  falha;
+
+* `*.bib`: é o arquivo com cadastro das referências bibliográficas. No
+  meu caso esse arquivo é gerado automaticamente pelo Mendeley
+  (gerenciador de referências bibliográficas), sendo assim sua
+  organização/estrutura é definida pelo Mendeley. Esse arquivo também
+  pode ser criado manualmente;
+
 * `*.out`: auxiliar dos bookmarks (suponho);
+
 * `*.toc`: auxiliar do sumário.
 
-A codificação de caracteres desses arquivos é utf-8. Usuários do Windows provavelmente terão que converter para o iso-8859-1 que a codificação predominante nesse sistema.
+A codificação de caracteres desses arquivos é utf-8. Usuários do
+Windows provavelmente terão que converter para o iso-8859-1 que a
+codificação predominante nesse sistema.
 
 ## Aplicativos
 
-A edição desses arquivos foi feita principalmente com o editor [Kile](http://kile.sourceforge.net/) para arquivos [LaTex](http://www.latex-project.org/). Para análises estatísticas foi considerado o [aplicativo R computação estatística](http://cran.r-project.org/). Para trabalhar com arquivos [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) (não incluídos) foi usado [Emacs](http://vgoulet.act.ulaval.ca/en/emacs/)+[ESS](http://ess.r-project.org/). Para extrair e gerenciar referências bibliográficas foi usado o [Mendeley](http://www.mendeley.com/) com navegador [Firefox](http://www.mozilla.org/pt-BR/firefox/new/). O estilo de referências bibliográficas foi disponível no pacote latex [abntcite](http://code.google.com/p/abntex2/). O sistema operacional foi o [Ubuntu 12.04](http://releases.ubuntu.com/precise/).
+A edição desses arquivos foi feita principalmente com o editor
+[Kile](http://kile.sourceforge.net/) para arquivos
+[LaTex](http://www.latex-project.org/). Para análises estatísticas foi
+considerado o [aplicativo R computação
+estatística](http://cran.r-project.org/). Para trabalhar com arquivos
+[Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) (não
+incluídos) foi usado
+[Emacs](http://vgoulet.act.ulaval.ca/en/emacs/)+[ESS](http://ess.r-project.org/). Para
+extrair e gerenciar referências bibliográficas foi usado o
+[Mendeley](http://www.mendeley.com/) com navegador
+[Firefox](http://www.mozilla.org/pt-BR/firefox/new/). O estilo de
+referências bibliográficas foi disponível no pacote latex
+[abntcite](http://code.google.com/p/abntex2/). O sistema operacional
+foi o [Ubuntu 12.04](http://releases.ubuntu.com/precise/).
+
+## Funcionamento
+
+#### Por que repartir o código fonte?
+
+Para ter melhor controle do projeto como um todo. Mantendo cada
+capítulo isolado é mais fácil navegar dentro do arquivo e encontrar
+erros (debugar). Ao compilar `WalmesTese.tex` pode-se deixar comentado
+os demais capítulos para ver como fica cada capítulo à medida que se
+edita.
+
+#### Por que compilar cada arquivo separado dentro de cada diretório?
+
+Essa foi a forma que encontrada para superar a exigência de que cada
+capítulo tivesse suas referências bibliográficas ao final. O arquivo
+`cap1introduc.bbl`, que contêm cada `\bibitem{}` das citações em
+`cap1.tex`, é criado ao gerar o `cap1introduc.pdf` a partir do
+`cap1introduc.tex`. Sendo assim, em `WalmesTese.tex` basta fazer o
+`\input{cap1introduc.bbl}`. O detalhe é que foi usado
+`\input{cap1introduc-corrigido.bbl}`.
+
+#### Qual a diferença entre *.bbl e *-corrigido.bbl?
+
+Algumas referências tem peculiaridades que o abntcite não sabe
+tratar. Um exemplo são os artigos da JRSS. Após o nome da revista tem
+a série (A, B ou C). A citação correta deve ter apenas o nome da
+revista em negrito conforme o exemplo abaixo:
+
+> BEALE, E. M. Confidence regions in non-linear estimation.  **Journal
+  of the Royal Statistical Society**. Series B (Methodological),
+  v. 22, n. 1, p. 41-76, jan. 1960.
+
+Para sair assim deve-se editar o `\bibitem{}` para que fique dessa forma:
+
+```latex
+\bibitem[Beale 1960]{Beale1960}
+\abntrefinfo{Beale}{BEALE}{1960}
+{BEALE, E.~M. {Confidence regions in non-linear estimation}.
+\textbf{Journal of the Royal Statistical Society}. Series B (Methodological),
+  v.~22, n.~1, p. 41--76, Jan. 1960.}
+```
+
+No arquivo `bibtese2.bib` essa citação está registrada assim:
+
+```latex
+@article{Beale1960,
+author  = {Beale, E M},
+journal = {Journal of the Royal Statistical Society. Series B (Methodological)},
+month   = jan,
+number  = {1},
+pages   = {41--76},
+title   = {{Confidence regions in non-linear estimation}},
+volume  = {22},
+year    = {1960}
+}
+```
+
+Como não tem um campo para esse subtítulo da revista, a única opção é
+deixar junto no campo `journal={}`. Acontece que sendo assim o
+`\bibitem{}` gerado é assim:
+
+```latex
+\bibitem[Beale 1960]{Beale1960}
+\abntrefinfo{Beale}{BEALE}{1960}
+{BEALE, E.~M. {Confidence regions in non-linear estimation}.
+\textbf{Journal of the Royal Statistical Society. Series B (Methodological)},
+  v.~22, n.~1, p. 41--76, jan. 1960.}
+```
+
+E a citação correspondente fica errada:
+
+> BEALE, E. M. Confidence regions in non-linear estimation.  **Journal
+  of the Royal Statistical Society. Series B (Methodological)**,
+  v. 22, n. 1, p. 41-76, jan. 1960.
 
