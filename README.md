@@ -4,7 +4,8 @@
 
 Este arquivo é a descrição de como foram organizados os arquivos e os
 diretórios além de guias gerais para aproveitar a estrutura e conteúdo
-dos arquivos fornecidos.
+dos arquivos fornecidos para fazer Dissertação e Tese nos formatos
+vigentes da UFLA em 2013/1.
 
 ## Partição do código fonte
 
@@ -12,12 +13,12 @@ Uma das vantagens da edição de documentos em LaTex é fazer a partição
 do código fonte. Com iss é possível editar partes de um grande
 documento, como uma Tese, mantendo as partes separadas em arquivos.
 
-Para ter um maior controle do projeto eu separei todo o conteúdo em
-diretórios. Cada capítulo tem um diretório. As figuras, tabelas e
-scripts R também tem seus diretórios. Abaixo está a organização do
+Para ter um maior controle do projeto os arquivos foram serapados em
+diretórios específicos. Cada capítulo tem um diretório, bem como as
+figuras, tabelas e scripts R. Abaixo está a árvore de organização do
 diretório.
 
-```
+```latex
 .
 ├── cap1
 │   ├── cap1abstract.tex
@@ -90,66 +91,54 @@ diretório.
 Uma vez que tem-se o código fonte dividido e os elementos que o
 compõem estão distribuídos em vários diretórios, deve se dar atenção
 nas chamadas dos arquivos nos `\input{}`, `\includegraphics{}` e
-`\bibliography{}`. No Linux isso é facilmente controlado por meio da
-espeficicação relacional de diretórios usando `../` e `./`.
+`\bibliography{}` que são feitos. No Linux isso é facilmente feito por meio da
+notação de diretórios relativos `./`. e `../`. 
 
 ## Descrição de cada arquivo
 
 #### Diretórios
-* `cap?`: diretórios para os arquivos de cada capítulo;
-* `figuras`: diretório com todas figuras;
-* `tabelas`: diretório com todas as tabelas;
-* `scripts`: diretório com scripts R fornecidos como anexo.
 
-#### Nomes de arquivos
+* `cap?`: para os arquivos de cada capítulo;
+* `figuras`: para as figuras inseridas no texto;
+* `scripts`: para os scripts R fornecidos como anexo.
+* `tabelas`: para as tabelas inseridas no texto;
+* `tese`: para preambulo, arquivos de referências e arquivo mestre;
 
-* `cap?`: prefixo `cap` seguido de número, que indica o capítulo, é o
+#### Nomes dos arquivos
+
+* `cap?.tex`: prefixo `cap` seguido de número, que indica o capítulo, é o
     arquivo com o corpo do capítulo. Com sufixos indica-se que
     elementos textuais se referem.
-
-    * `resumo`: resumo do capitulo;
-    * `abstract`: abstract do capítulo;
-
-* `WalmesTese`: arquivo mestre que gera o pdf da Tese;
-
-* `capaspretexto`: capa, folha de rosto, ficha catalográfica,
+    * `cap?.resumo.tex`: resumo do capitulo;
+    * `cap?abstract.tex`: abstract do capítulo;
+* `WalmesTese.tex`: arquivo mestre que gera o pdf da Tese;
+* `capaspretexto.tex`: capa, folha de rosto, ficha catalográfica,
     agradecimentos, epigrafe;
-
-* `resumos`: contém o resumo e abstract geral da Tese;
-
-* `bibtese2`: documentado no item `*.bib`
-
-* `preambulo`: preambulo de acordo com as normas da UFLA em 2013/1
+* `resumos.tex`: contém o resumo e abstract geral da Tese;
+* `bibtese2.bib`: documentado no item `*.bib`
+* `preambulo.tex`: preambulo de acordo com as normas da UFLA em 2013/1
     para Tese;
-
-* `preambulosimples`: preambulo simples usado para gerar o pdf de cada
+* `preambulosimples.tex`: preambulo simples usado para gerar o pdf de cada
     capítulo isolado.
 
-#### Extensões de arquivos
+#### Extensões dos arquivos
 
 * `*.tex`: arquivos nativos do latex;
-
 * `*.aux`: auxiliar ao sistema de citação bibliográfica;
-
 * `*.bbl`: resultado do processo de citação, contém entradas
   `\bibitem`. No caso de alguma referência não estar de acordo com as
   normas de citação exigidas, pode-se alterar a forma como ela é
   escrita e salvar em outro arquivo que no caso está identificado por
   `-corrigido.bbl`;
-
 * `*.blg`: é o log do sistema de referências bibliográficas;
-
 * `*.log`: log da compilação, que inclui mensagens de erro no caso de
   falha;
-
 * `*.bib`: é o arquivo com cadastro das referências bibliográficas. No
   meu caso esse arquivo é gerado automaticamente pelo Mendeley
   (gerenciador de referências bibliográficas), sendo assim sua
   organização/estrutura é definida pelo Mendeley. Esse arquivo também
   pode ser criado manualmente;
-
 * `*.out`: auxiliar dos bookmarks (suponho);
-
 * `*.toc`: auxiliar do sumário.
 
 A codificação de caracteres desses arquivos é utf-8. Usuários do
@@ -193,7 +182,7 @@ capítulo tivesse suas referências bibliográficas ao final. O arquivo
 `\input{cap1introduc.bbl}`. O detalhe é que foi usado
 `\input{cap1introduc-corrigido.bbl}`.
 
-#### Qual a diferença entre *.bbl e *-corrigido.bbl?
+#### Qual a diferença entre `*.bbl` e `*-corrigido.bbl`?
 
 Algumas referências tem peculiaridades que o abntcite não sabe
 tratar. Um exemplo são os artigos da JRSS. Após o nome da revista tem
@@ -231,7 +220,8 @@ year    = {1960}
 
 Como não tem um campo para esse subtítulo da revista, a única opção é
 deixar junto no campo `journal={}`. Acontece que sendo assim o
-`\bibitem{}` gerado é assim:
+`\bibitem{}` gerado é com o `\textbf{}` incluindo nome da revista e
+subtítulo:
 
 ```latex
 \bibitem[Beale 1960]{Beale1960}
@@ -247,3 +237,90 @@ E a citação correspondente fica errada:
   of the Royal Statistical Society. Series B (Methodological)**,
   v. 22, n. 1, p. 41-76, jan. 1960.
 
+Em resumo, enquanto houver inserção/remoção de referências use o
+`abntcite` e nas referências cadastradas no `*.bib`. Isso vai gerar o
+`*.bbl` que será incluído e possivelmente algumas referências vão
+precisar ser alteradas. Ao final, copie o `*.bbl` para
+`*-corrigido.bbl`. Entre no `*-corrigido.bbl` e edite as referências
+que estão fora do padrão. Então use o `*-corrigido.bbl`. Por exemplo,
+dentro do arquivo `*cap1introduc.tex` foi usado:
+
+```latex
+\bibliography{../tese/bibtese2}
+%% \vspace*{-1.5cm}
+%% \input{cap1introduc-corrigido.bbl}
+```
+
+Permaneceu assim até a versão submetida à Banca de Exame do
+Doutorado. Após correções das referências bibliográficas por uma
+profissional, as referências foram inseridas assim:
+
+```latex
+%% \bibliography{../tese/bibtese2}
+\vspace*{-1.5cm}
+\input{cap1introduc-corrigido.bbl}
+```
+
+## Campos desnecessários no `*.bib`
+
+O Mendeley foi o aplicativo usado para gerenciar as
+referências. Normalmente os metadados das referências são extraídas
+das páginas web das revistas de onde baixa-se também o pdf dos
+artigos. Ao extrair os metadados com o Mendeley vem mais informação do
+que o necessário para gerar as referências na Tese. Essas informações
+são o ISSN, ISBN, url, doi, como exemplo abaixo:
+
+```latex
+%% arquivo bibtese.bib gerado pelo Mendeley
+@article{Alper1990,
+author = {Alper, Joseph S. and Gelb, Robert I.},
+doi = {10.1021/j100374a068},
+file = {:home/walmes/Documentos/Mendeley Desktop/Alper1990.pdf},
+issn = {0022-3654},
+journal = {The Journal of Physical Chemistry},
+month = may,
+number = {11},
+pages = {4747--4751},
+publisher = {American Chemical Society},
+title = {{Standard errors and confidence intervals ...}},
+url = {http://dx.doi.org/10.1021/j100374a068},
+volume = {94},
+year = {1990}
+}
+```
+
+Tais informações desnecessárias são incluídas no `*.pdf` quando
+presentes no cadastro da referência dentro do `*.bib` que é gerado
+automaticamente pelo Mendeley. Não foi encontrado como especificar os
+campos que devem ser exportados pelo Mendeley ou os considerados pelo
+abntcite. A solução foi excluir os campos desnecessários no arquivo
+gerado pelo Mendeley. O código R abaixo lê o `bibtese.bib`, que veio
+do Mendeley, e remove alguns campos para salvar o resultado em
+`bibtese2.bib`, que é de fato o arquivo usado.
+
+```coffescript
+## lê arquivo
+bib <- readLines("bibtese.bib")
+
+## encontra as linhas com campos indesejáveis
+tira <- grep("(abstract|issn|isbn|url|doi|series|file) =", bib)
+
+## escreve outro arquivo sem as linhas de campos indesejáveis
+writeLines(bib[-tira], con="bibtese2.bib")
+```
+
+```latex
+%% arquivo bibtese2.bib resultado de remoção de linhas (campos)
+%% feito por meio de um script R
+@article{Alper1990,
+author = {Alper, Joseph S. and Gelb, Robert I.},
+journal = {The Journal of Physical Chemistry},
+month = may,
+number = {11},
+pages = {4747--4751},
+publisher = {American Chemical Society},
+title = {{Standard errors and confidence intervals ...}},
+volume = {94},
+year = {1990}
+}
+```
