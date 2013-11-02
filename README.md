@@ -298,7 +298,7 @@ gerado pelo Mendeley. O código R abaixo lê o `bibtese.bib`, que veio
 do Mendeley, e remove alguns campos para salvar o resultado em
 `bibtese2.bib`, que é de fato o arquivo usado.
 
-```coffescript
+```r
 ## lê arquivo
 bib <- readLines("bibtese.bib")
 
@@ -308,6 +308,9 @@ tira <- grep("(abstract|issn|isbn|url|doi|series|file) =", bib)
 ## escreve outro arquivo sem as linhas de campos indesejáveis
 writeLines(bib[-tira], con="bibtese2.bib")
 ```
+
+Após remover os campos, a mesma referência tem os seguintes campos no
+arquivo `bibtese2.bib`:
 
 ```latex
 %% arquivo bibtese2.bib resultado de remoção de linhas (campos)
